@@ -15,8 +15,9 @@ const directLinks = [
   "https://omg10.com/4/10867541",
   "https://omg10.com/4/10867542"
 ];
-let lastAdTime = 0;
-const adCooldown = 45000; // 45 seconds cooldown between automatic popup ads
+let lastAdTime = Date.now(); // Track last ad timestamp
+let channelChangeCount = 0;   // Count channel changes
+const tenMinutes = 10 * 60 * 1000; // 10 minutes in ms
 
 // DOM Elements
 const appLoader = document.getElementById("appLoader");
@@ -319,10 +320,6 @@ function getFallbackColor(name) {
    MONETAG AD SYSTEM
    ========================================== */
 function triggerDirectLink() {
-  const now = Date.now();
-  if (now - lastAdTime < adCooldown) return;
-  
-  lastAdTime = now;
   const randomIndex = Math.floor(Math.random() * directLinks.length);
   const url = directLinks[randomIndex];
   
@@ -337,7 +334,16 @@ function triggerDirectLink() {
    CHANNEL PLAYBACK LOGIC
    ========================================== */
 function clickChannel(filteredIdx) {
-  triggerDirectLink();
+  channelChangeCount++;
+  const now = Date.now();
+  
+  // Rule: Show ad every 3 channel changes OR every 10 minutes
+  if (channelChangeCount >= 3 || (now - lastAdTime >= tenMinutes)) {
+    triggerDirectLink();
+    channelChangeCount = 0; // Reset counter
+    lastAdTime = now;       // Reset timer
+  }
+
   const actualChannel = filteredChannels[filteredIdx];
   // Find index in main channels list
   const mainIdx = channels.findIndex(ch => ch.id === actualChannel.id);
