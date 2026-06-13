@@ -6,6 +6,7 @@ let filteredChannels = [];
 let favorites = [];
 let currentCategory = "All";
 let currentChannelIndex = -1;
+let pendingChannelIndex = -1; // Holds channel play during popup blocker fallback
 let hlsInstance = null;
 let plyrPlayer = null;
 
@@ -319,35 +320,69 @@ function getFallbackColor(name) {
 /* ==========================================
    MONETAG AD SYSTEM
    ========================================== */
+const adOverlay = document.getElementById("adOverlay");
+const adOverlayBtn = document.getElementById("adOverlayBtn");
+
 function triggerDirectLink() {
   const randomIndex = Math.floor(Math.random() * directLinks.length);
   const url = directLinks[randomIndex];
   
   // Open direct link in a new tab
   const win = window.open(url, "_blank");
-  if (win) {
-    try { win.blur(); window.focus(); } catch (e) {}
+  if (!win || win.closed || typeof win.closed === 'undefined') {
+    // Popup was BLOCKED by browser - Trigger Fallback Overlay Modal
+    showAdOverlay(url);
+    return false;
   }
+  
+  try { win.blur(); window.focus(); } catch (e) {}
+  return true;
+}
+
+function showAdOverlay(adUrl) {
+  adOverlay.classList.remove("hidden");
+  
+  // Clone button to strip existing event listeners cleanly
+  const newBtn = adOverlayBtn.cloneNode(true);
+  adOverlayBtn.parentNode.replaceChild(newBtn, adOverlayBtn);
+  
+  newBtn.addEventListener("click", () => {
+    // Open ad link (direct user click - browser will NEVER block this)
+    window.open(adUrl, "_blank");
+    adOverlay.classList.add("hidden");
+    
+    // Play the channel after they click to watch
+    if (pendingChannelIndex !== -1) {
+      playChannel(pendingChannelIndex);
+      pendingChannelIndex = -1;
+    }
+  });
 }
 
 /* ==========================================
    CHANNEL PLAYBACK LOGIC
    ========================================== */
 function clickChannel(filteredIdx) {
+  const actualChannel = filteredChannels[filteredIdx];
+  // Find index in main channels list
+  const mainIdx = channels.findIndex(ch => ch.id === actualChannel.id);
+  if (mainIdx === -1) return;
+
   channelChangeCount++;
   const now = Date.now();
   
   // Rule: Show ad every 3 channel changes OR every 10 minutes
   if (channelChangeCount >= 3 || (now - lastAdTime >= tenMinutes)) {
-    triggerDirectLink();
     channelChangeCount = 0; // Reset counter
     lastAdTime = now;       // Reset timer
+    
+    const adOpened = triggerDirectLink();
+    if (!adOpened) {
+      // Popup blocked - store channel index and wait for overlay click
+      pendingChannelIndex = mainIdx;
+      return;
+    }
   }
-
-  const actualChannel = filteredChannels[filteredIdx];
-  // Find index in main channels list
-  const mainIdx = channels.findIndex(ch => ch.id === actualChannel.id);
-  if (mainIdx === -1) return;
   
   playChannel(mainIdx);
 }
