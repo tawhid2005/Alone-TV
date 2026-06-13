@@ -39,6 +39,9 @@
       </div>
     </header>
 
+    <!-- Top Banner Ad Container -->
+    <div class="ad-container ad-top" id="topAdContainer"></div>
+
     <div class="main-layout">
       <!-- Sidebar / Category List -->
       <aside class="sidebar">
@@ -46,6 +49,8 @@
         <div class="category-list" id="categoryList">
           <!-- Dynamically populated categories -->
         </div>
+        <!-- Sidebar Ad Container -->
+        <div class="ad-container ad-sidebar" id="sidebarAdContainer"></div>
       </aside>
 
       <!-- Main Content (Player & Channel Grid) -->
@@ -75,11 +80,16 @@
                 <button id="favoriteBtn" class="favorite-toggle-btn" title="Add to Favorites">
                   <i class="fa-regular fa-star"></i>
                 </button>
+                <button id="altServerBtn" class="alt-server-btn" title="Alternative Server (HD)">
+                  <i class="fa-solid fa-bolt"></i> Alternative Server (HD)
+                </button>
               </div>
               <p id="currentChannelCategory" class="channel-category-badge">General</p>
             </div>
           </div>
         </section>
+        <!-- Player Bottom Ad Container -->
+        <div class="ad-container ad-player-bottom" id="playerAdContainer"></div>
 
         <!-- Grid Section -->
         <section class="grid-section">
@@ -135,5 +145,12 @@
   <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js"></script>
   <!-- App JS -->
   <script src="app.js"></script>
+
+  <!-- 
+    ========================================================
+    ADSTERRA & MONETAG POPUNDER SCRIPTS HOLDER
+    Place your Popunder Javascript Codes below
+    ========================================================
+  -->
 </body>
 </html>

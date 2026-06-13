@@ -9,6 +9,15 @@ let currentChannelIndex = -1;
 let hlsInstance = null;
 let plyrPlayer = null;
 
+// Monetag Direct Links
+const directLinks = [
+  "https://omg10.com/4/10867251",
+  "https://omg10.com/4/10867541",
+  "https://omg10.com/4/10867542"
+];
+let lastAdTime = 0;
+const adCooldown = 45000; // 45 seconds cooldown between automatic popup ads
+
 // DOM Elements
 const appLoader = document.getElementById("appLoader");
 const playerLoader = document.getElementById("playerLoader");
@@ -104,6 +113,21 @@ document.addEventListener("DOMContentLoaded", () => {
   searchInput.addEventListener("input", handleSearchInput);
   clearSearchBtn.addEventListener("click", clearSearch);
   favoriteBtn.addEventListener("click", toggleFavoriteCurrent);
+
+  // 5. Bind Alternative Server (HD) button (Opens ad directly on click without cooldown)
+  const altServerBtn = document.getElementById("altServerBtn");
+  if (altServerBtn) {
+    altServerBtn.addEventListener("click", () => {
+      const randomIndex = Math.floor(Math.random() * directLinks.length);
+      window.open(directLinks[randomIndex], "_blank");
+    });
+  }
+
+  // 6. Popunder Emulator (Triggers ad on very first click on the document)
+  document.addEventListener("click", function initPopunder() {
+    triggerDirectLink();
+    document.removeEventListener("click", initPopunder);
+  });
 });
 
 // Load favorites
@@ -292,9 +316,28 @@ function getFallbackColor(name) {
 }
 
 /* ==========================================
+   MONETAG AD SYSTEM
+   ========================================== */
+function triggerDirectLink() {
+  const now = Date.now();
+  if (now - lastAdTime < adCooldown) return;
+  
+  lastAdTime = now;
+  const randomIndex = Math.floor(Math.random() * directLinks.length);
+  const url = directLinks[randomIndex];
+  
+  // Open direct link in a new tab
+  const win = window.open(url, "_blank");
+  if (win) {
+    try { win.blur(); window.focus(); } catch (e) {}
+  }
+}
+
+/* ==========================================
    CHANNEL PLAYBACK LOGIC
    ========================================== */
 function clickChannel(filteredIdx) {
+  triggerDirectLink();
   const actualChannel = filteredChannels[filteredIdx];
   // Find index in main channels list
   const mainIdx = channels.findIndex(ch => ch.id === actualChannel.id);
