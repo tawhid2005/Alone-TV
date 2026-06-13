@@ -95,6 +95,26 @@
       </main>
     </div>
 
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+      <button class="nav-item active" data-nav="All" onclick="selectNav('All', this)">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </button>
+      <button class="nav-item" data-nav="FIFA26" onclick="selectNav('FIFA26', this)">
+        <i class="fa-solid fa-circle-play"></i>
+        <span>FIFA</span>
+      </button>
+      <button class="nav-item" data-nav="Favorites" onclick="selectNav('Favorites', this)">
+        <i class="fa-solid fa-star"></i>
+        <span>Favorites</span>
+      </button>
+      <button class="nav-item" data-nav="Search" onclick="selectNav('Search', this)">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <span>Search</span>
+      </button>
+    </nav>
+
     <!-- App Loader Overlay (initial load) -->
     <div id="appLoader" class="app-loader-overlay">
       <div class="loader-content">

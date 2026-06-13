@@ -730,6 +730,63 @@ body {
 }
 
 /* ==========================================
+   MOBILE BOTTOM NAVIGATION STYLES
+   ========================================== */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background-color: rgba(18, 20, 32, 0.95);
+  backdrop-filter: var(--glass-blur);
+  border-top: 1px solid var(--border-color);
+  z-index: 99;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+  transition: var(--transition-fast);
+}
+
+.nav-item i {
+  font-size: 18px;
+  transition: var(--transition-fast);
+}
+
+.nav-item:hover {
+  color: var(--text-primary);
+}
+
+.nav-item.active {
+  color: var(--accent-primary);
+  background: radial-gradient(circle at bottom, rgba(99, 102, 241, 0.05) 0%, transparent 60%);
+}
+
+.nav-item.active i {
+  transform: translateY(-2px);
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+  color: var(--accent-primary);
+}
+
+/* ==========================================
    RESPONSIVE DESIGN STYLES
    ========================================== */
 @media (max-width: 1024px) {
@@ -743,10 +800,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .mobile-nav {
+    display: flex;
+  }
+
   .main-layout {
     flex-direction: column;
     height: auto;
     overflow-y: auto;
+    padding-bottom: 75px; /* Prevent bottom nav overlapping content */
   }
   
   .sidebar {
@@ -758,31 +820,50 @@ body {
   }
   
   .sidebar-title {
-    padding: 16px 16px 8px 16px;
+    display: none; /* Hide sidebar title on mobile to save space */
   }
   
   .category-list {
     flex-direction: row;
     overflow-x: auto;
-    padding: 0 16px 16px 16px;
+    padding: 12px 16px;
     gap: 8px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .category-list::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
   }
   
   .category-pill {
     white-space: nowrap;
     padding: 8px 14px;
+    font-size: 12px;
   }
   
   .category-pill i {
-    margin-right: 8px;
+    margin-right: 6px;
+  }
+
+  .category-count {
+    font-size: 10px;
+    padding: 1px 4px;
   }
   
   .content-area {
     overflow-y: visible;
   }
   
+  /* Sticky Video Player on Mobile */
   .player-section {
-    padding: 16px;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+    padding: 12px;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   }
   
   .grid-section {
@@ -863,11 +944,12 @@ body {
   }
   
   .player-section {
-    padding: 12px;
+    padding: 10px;
   }
   
   .channel-info-bar {
-    gap: 10px;
+    gap: 8px;
+    margin-top: 10px;
   }
   
   .current-channel-logo-container {
@@ -876,10 +958,10 @@ body {
   }
   
   .current-channel-details h1 {
-    font-size: 15px;
+    font-size: 14px;
   }
   
   .favorite-toggle-btn {
-    font-size: 15px;
+    font-size: 14px;
   }
 }

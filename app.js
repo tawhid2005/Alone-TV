@@ -423,7 +423,7 @@ function showPlayerError() {
 function selectCategory(categoryName, element) {
   currentCategory = categoryName;
   
-  // Highlight active category
+  // Highlight active category in sidebar
   document.querySelectorAll(".category-pill").forEach(pill => {
     pill.classList.remove("active");
   });
@@ -434,6 +434,14 @@ function selectCategory(categoryName, element) {
     const pill = document.querySelector(`.category-pill[data-category="${categoryName}"]`);
     if (pill) pill.classList.add("active");
   }
+
+  // Highlight active bottom nav item (for mobile)
+  document.querySelectorAll(".nav-item").forEach(item => {
+    item.classList.remove("active");
+    if (item.dataset.nav === categoryName) {
+      item.classList.add("active");
+    }
+  });
   
   // Update Grid Title
   const cleanTitle = categoryName.toLowerCase().trim() === "fifa26" ? "FIFA Streams" : `${categoryName} Channels`;
@@ -445,6 +453,23 @@ function selectCategory(categoryName, element) {
   // Auto play first channel in the new category
   if (filteredChannels.length > 0) {
     clickChannel(0);
+  }
+}
+
+/* ==========================================
+   MOBILE NAVIGATION
+   ========================================== */
+function selectNav(navType, element) {
+  document.querySelectorAll(".nav-item").forEach(item => {
+    item.classList.remove("active");
+  });
+  element.classList.add("active");
+
+  if (navType === "Search") {
+    searchInput.focus();
+    searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
+  } else {
+    selectCategory(navType);
   }
 }
 
