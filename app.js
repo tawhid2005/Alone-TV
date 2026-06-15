@@ -9,8 +9,6 @@ let currentChannelIndex = -1;
 let pendingChannelIndex = -1; // Holds channel play during popup blocker fallback
 let displayedCount = 40;       // Number of channels rendered initially for performance
 let hlsInstance = null;
-let mpegtsInstance = null;
-let plyrPlayer = null;
 
 // Monetag & Adsterra Direct Links / Smartlinks
 const directLinks = [
@@ -70,36 +68,91 @@ const fallbackColors = [
 ];
 
 /* ==========================================
-   INITIALIZE PLYR PLAYER
+   INITIALIZE CUSTOM PLAYER
    ========================================== */
 function initPlayer() {
-  plyrPlayer = new Plyr(videoElement, {
-    controls: [
-      'play-large', 'play', 'mute', 'volume', 
-      'settings', 'pip', 'fullscreen'
-    ],
-    settings: ['quality', 'speed', 'loop'],
-    ratio: '16:9'
+  // ── Custom Controls ──────────────────────
+  const playPauseBtn  = document.getElementById('playPauseBtn');
+  const playPauseIcon = document.getElementById('playPauseIcon');
+  const muteBtn       = document.getElementById('muteBtn');
+  const muteIcon      = document.getElementById('muteIcon');
+  const volumeSlider  = document.getElementById('volumeSlider');
+  const fullscreenBtn = document.getElementById('fullscreenBtn');
+  const fullscreenIcon= document.getElementById('fullscreenIcon');
+  const playerWrapper = document.querySelector('.player-wrapper');
+
+  // Play / Pause
+  playPauseBtn.addEventListener('click', () => {
+    if (videoElement.paused) {
+      videoElement.play().catch(() => {});
+    } else {
+      videoElement.pause();
+    }
   });
 
-  // Track errors via video tag directly as backup
+  videoElement.addEventListener('play',  () => { playPauseIcon.className = 'fa-solid fa-pause'; });
+  videoElement.addEventListener('pause', () => { playPauseIcon.className = 'fa-solid fa-play';  });
+
+  // Mute / Unmute
+  muteBtn.addEventListener('click', () => {
+    videoElement.muted = !videoElement.muted;
+    muteIcon.className = videoElement.muted
+      ? 'fa-solid fa-volume-xmark'
+      : 'fa-solid fa-volume-high';
+  });
+
+  // Volume slider
+  volumeSlider.addEventListener('input', () => {
+    videoElement.volume = volumeSlider.value;
+    videoElement.muted  = volumeSlider.value == 0;
+    muteIcon.className  = videoElement.muted
+      ? 'fa-solid fa-volume-xmark'
+      : 'fa-solid fa-volume-high';
+  });
+
+  // Fullscreen
+  fullscreenBtn.addEventListener('click', () => {
+    if (!document.fullscreenElement) {
+      playerWrapper.requestFullscreen().catch(() => {});
+      fullscreenIcon.className = 'fa-solid fa-compress';
+    } else {
+      document.exitFullscreen();
+      fullscreenIcon.className = 'fa-solid fa-expand';
+    }
+  });
+
+  document.addEventListener('fullscreenchange', () => {
+    if (!document.fullscreenElement) {
+      fullscreenIcon.className = 'fa-solid fa-expand';
+    }
+  });
+
+  // Show controls briefly on mobile touch
+  playerWrapper.addEventListener('click', () => {
+    playerWrapper.classList.add('show-controls');
+    clearTimeout(playerWrapper._hideTimer);
+    playerWrapper._hideTimer = setTimeout(() => {
+      playerWrapper.classList.remove('show-controls');
+    }, 3000);
+  });
+
+  // ── Video State Events ───────────────────
   videoElement.addEventListener('error', () => {
-    // If native loading fails
-    if (!hlsInstance && !mpegtsInstance && videoElement.error) {
+    if (!hlsInstance && videoElement.error) {
       showPlayerError();
     }
   });
 
-  // Track playing state to hide loaders
   videoElement.addEventListener('playing', () => {
-    playerLoader.classList.add("hidden");
-    playerError.classList.add("hidden");
+    playerLoader.classList.add('hidden');
+    playerError.classList.add('hidden');
   });
 
   videoElement.addEventListener('waiting', () => {
-    playerLoader.classList.remove("hidden");
+    playerLoader.classList.remove('hidden');
   });
 }
+
 
 /* ==========================================
    LOAD DATA & START APP
@@ -481,88 +534,73 @@ function playChannel(mainIndex) {
 }
 
 function loadStream(url) {
-  // Clean up existing Hls instance
+  // ── Destroy existing HLS instance ────────
   if (hlsInstance) {
     hlsInstance.destroy();
     hlsInstance = null;
   }
 
-  // Clean up existing mpegts instance
-  if (mpegtsInstance) {
-    mpegtsInstance.pause();
-    mpegtsInstance.unload();
-    mpegtsInstance.detachMediaElement();
-    mpegtsInstance.destroy();
-    mpegtsInstance = null;
-  }
+  // Reset video element cleanly
+  videoElement.removeAttribute('src');
+  videoElement.load();
 
-  // Check if it is a .ts video stream URL
-  const isMpegTs = url.split("?")[0].toLowerCase().endsWith(".ts") || url.toLowerCase().includes(".ts");
-
-  if (isMpegTs && typeof mpegts !== 'undefined' && mpegts.isSupported()) {
-    mpegtsInstance = mpegts.createPlayer({
-      type: 'mpegts',
-      url: url,
-      isLive: true,
-      cors: true,
-      withCredentials: false
-    });
-    
-    mpegtsInstance.attachMediaElement(videoElement);
-    mpegtsInstance.load();
-    mpegtsInstance.play().catch(e => console.log("MPEGTS play interrupted:", e));
-    
-    mpegtsInstance.on(mpegts.Events.ERROR, (type, detail, info) => {
-      console.error("MPEGTS error:", type, detail, info);
-      showPlayerError();
-    });
-  }
-  else if (Hls.isSupported()) {
+  // ── HLS.js (Chrome, Firefox, Edge, Android) ─
+  if (Hls.isSupported()) {
     hlsInstance = new Hls({
-      maxMaxBufferLength: 10,
+      maxMaxBufferLength: 30,
+      maxBufferSize: 60 * 1000 * 1000,
+      maxBufferLength: 30,
       enableWorker: true,
-      lowLatencyMode: true
+      lowLatencyMode: true,
+      startLevel: -1,          // Auto quality
+      abrEwmaDefaultEstimate: 500000
     });
-    
+
     hlsInstance.loadSource(url);
     hlsInstance.attachMedia(videoElement);
-    
+
     hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
-      videoElement.play().catch(e => console.log("Play interrupted or blocked:", e));
+      videoElement.play().catch(e => console.log("Play blocked:", e));
     });
 
+    // Retry on recoverable errors
+    let mediaErrorCount = 0;
     hlsInstance.on(Hls.Events.ERROR, (event, data) => {
-      if (data.fatal) {
-        switch (data.type) {
-          case Hls.ErrorTypes.NETWORK_ERROR:
-            console.error("HLS Network error:", data);
-            // Try recovery
-            hlsInstance.startLoad();
-            break;
-          case Hls.ErrorTypes.MEDIA_ERROR:
-            console.error("HLS Media error:", data);
+      if (!data.fatal) return;
+      switch (data.type) {
+        case Hls.ErrorTypes.NETWORK_ERROR:
+          console.warn("HLS network error — restarting load…");
+          setTimeout(() => hlsInstance && hlsInstance.startLoad(), 1000);
+          break;
+        case Hls.ErrorTypes.MEDIA_ERROR:
+          mediaErrorCount++;
+          if (mediaErrorCount < 3) {
+            console.warn("HLS media error — recovering…");
             hlsInstance.recoverMediaError();
-            break;
-          default:
-            console.error("HLS Fatal error:", data);
+          } else {
+            console.error("HLS media error — unrecoverable");
             showPlayerError();
-            break;
-        }
+          }
+          break;
+        default:
+          console.error("HLS fatal error:", data);
+          showPlayerError();
       }
     });
-  } 
-  // Native HLS support (Safari, iOS Chrome/Firefox, Apple devices)
+  }
+  // ── Native HLS (Safari / iOS) ────────────
   else if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
     videoElement.src = url;
     videoElement.addEventListener('loadedmetadata', () => {
-      videoElement.play().catch(e => console.log("Play interrupted or blocked:", e));
-    });
-  } 
-  // Non-HLS fallback
+      videoElement.play().catch(e => console.log("Play blocked:", e));
+    }, { once: true });
+  }
+  // ── Not supported ─────────────────────────
   else {
     console.error("HLS not supported on this browser.");
     showPlayerError();
   }
+
 }
 
 function showPlayerError() {
