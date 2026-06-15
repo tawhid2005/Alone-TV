@@ -540,6 +540,9 @@ function loadStream(url) {
     hlsInstance = null;
   }
 
+  // Force video element to be visible and fill container
+  videoElement.style.cssText = 'width:100%!important;height:100%!important;display:block!important;visibility:visible!important;opacity:1!important;position:absolute!important;top:0;left:0;background:#000;object-fit:contain;';
+
   // Reset video element cleanly
   videoElement.removeAttribute('src');
   videoElement.load();
@@ -552,29 +555,46 @@ function loadStream(url) {
       maxBufferLength: 30,
       enableWorker: true,
       lowLatencyMode: true,
-      startLevel: -1,          // Auto quality
-      abrEwmaDefaultEstimate: 500000
+      startLevel: -1,
+      abrEwmaDefaultEstimate: 500000,
+      xhrSetup: function(xhr, url) {
+        xhr.withCredentials = false;
+      }
     });
 
-    hlsInstance.loadSource(url);
+    // CRITICAL: attachMedia FIRST, then loadSource
+    videoElement.crossOrigin = 'anonymous';
     hlsInstance.attachMedia(videoElement);
 
-    hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => {
+    hlsInstance.on(Hls.Events.MEDIA_ATTACHED, () => {
+      hlsInstance.loadSource(url);
+    });
+
+    hlsInstance.on(Hls.Events.MANIFEST_PARSED, (event, data) => {
+      console.log('HLS manifest parsed, levels:', data.levels.length);
       videoElement.play().catch(e => console.log("Play blocked:", e));
+    });
+
+    hlsInstance.on(Hls.Events.FRAG_LOADED, () => {
+      // Ensure video renders once data arrives
+      if (videoElement.paused && videoElement.readyState >= 3) {
+        videoElement.play().catch(() => {});
+      }
     });
 
     // Retry on recoverable errors
     let mediaErrorCount = 0;
     hlsInstance.on(Hls.Events.ERROR, (event, data) => {
+      console.warn('HLS error:', data.type, data.details, 'fatal:', data.fatal);
       if (!data.fatal) return;
       switch (data.type) {
         case Hls.ErrorTypes.NETWORK_ERROR:
           console.warn("HLS network error — restarting load…");
-          setTimeout(() => hlsInstance && hlsInstance.startLoad(), 1000);
+          setTimeout(() => hlsInstance && hlsInstance.startLoad(), 1500);
           break;
         case Hls.ErrorTypes.MEDIA_ERROR:
           mediaErrorCount++;
-          if (mediaErrorCount < 3) {
+          if (mediaErrorCount < 4) {
             console.warn("HLS media error — recovering…");
             hlsInstance.recoverMediaError();
           } else {
@@ -590,6 +610,7 @@ function loadStream(url) {
   }
   // ── Native HLS (Safari / iOS) ────────────
   else if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
+    videoElement.crossOrigin = 'anonymous';
     videoElement.src = url;
     videoElement.addEventListener('loadedmetadata', () => {
       videoElement.play().catch(e => console.log("Play blocked:", e));
@@ -601,7 +622,7 @@ function loadStream(url) {
     showPlayerError();
   }
 
-}
+
 
 function showPlayerError() {
   playerLoader.classList.add("hidden");
