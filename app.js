@@ -202,24 +202,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// 8. Dynamic Delayed Ad Script Loading (Drastically speeds up initial load time)
-window.addEventListener("load", () => {
-  setTimeout(loadDelayedAds, 2500); // Delay heavy script loading by 2.5 seconds
-});
 
-function loadDelayedAds() {
-  console.log("Loading non-blocking background ad scripts...");
-  
-  // Adsterra Popunder Script
-  const popunder = document.createElement("script");
-  popunder.src = "https://pl29736919.effectivecpmnetwork.com/42/46/3e/42463e1d48ccaa804a3a46d5b48d54f6.js";
-  document.body.appendChild(popunder);
 
-  // Adsterra Social Bar Script
-  const socialBar = document.createElement("script");
-  socialBar.src = "https://pl29736922.effectivecpmnetwork.com/2c/7c/c6/2c7cc68fb62138aaecc833c758e4c3a7.js";
-  document.body.appendChild(socialBar);
-}
 
 // Load favorites
 function loadFavorites() {

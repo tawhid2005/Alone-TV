@@ -57,7 +57,7 @@
           'params' : {}
         };
       </script>
-      <script type="text/javascript" src="https://www.highperformanceformat.com/bb35470de6b043368996d6d40e6a362f/invoke.js"></script>
+      <script type="text/javascript" async src="https://www.highperformanceformat.com/bb35470de6b043368996d6d40e6a362f/invoke.js"></script>
     </div>
 
     <!-- Top Banner Ad Container (Mobile 320x50) -->
@@ -71,7 +71,7 @@
           'params' : {}
         };
       </script>
-      <script type="text/javascript" src="https://www.highperformanceformat.com/0eb0a4c7c0880c284f6f75819135a509/invoke.js"></script>
+      <script type="text/javascript" async src="https://www.highperformanceformat.com/0eb0a4c7c0880c284f6f75819135a509/invoke.js"></script>
     </div>
 
     <div class="main-layout">
@@ -92,7 +92,7 @@
               'params' : {}
             };
           </script>
-          <script type="text/javascript" src="https://www.highperformanceformat.com/1cab77e98287e4c8ee757e4d8c6f57a4/invoke.js"></script>
+          <script type="text/javascript" async src="https://www.highperformanceformat.com/1cab77e98287e4c8ee757e4d8c6f57a4/invoke.js"></script>
         </div>
       </aside>
 
@@ -223,8 +223,26 @@
 
   <!-- Hls.js Library -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.15/dist/hls.min.js"></script>
-  <!-- App JS -->
-  <script src="app.js?v=4" defer></script>
+  <!-- App JS (NO defer - needed for popunder to register on first click) -->
+  <script src="app.js?v=5"></script>
+
+  <!-- Adsterra Popunder (loads after page) -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        // Adsterra Popunder
+        var s1 = document.createElement('script');
+        s1.async = true;
+        s1.src = 'https://pl29736919.effectivecpmnetwork.com/42/46/3e/42463e1d48ccaa804a3a46d5b48d54f6.js';
+        document.body.appendChild(s1);
+        // Adsterra Social Bar
+        var s2 = document.createElement('script');
+        s2.async = true;
+        s2.src = 'https://pl29736922.effectivecpmnetwork.com/2c/7c/c6/2c7cc68fb62138aaecc833c758e4c3a7.js';
+        document.body.appendChild(s2);
+      }, 2000);
+    });
+  </script>
 
 </body>
 </html>
