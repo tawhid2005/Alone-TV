@@ -824,3 +824,168 @@ function handleAutoPlay() {
     clickChannel(playIdx);
   }
 }
+
+/* ==========================================
+   FIFA MATCH PLAYER MODULE
+   ========================================== */
+
+let matchesData = [];
+let currentMatchId = null;
+let currentServerIndex = 0;
+
+// Fetch matches data
+function fetchMatches() {
+  fetch('matches.json')
+    .then(res => res.ok ? res.json() : [])
+    .then(data => {
+      matchesData = data;
+      renderMatchCards();
+    })
+    .catch(() => { matchesData = []; });
+}
+
+// Render match selector cards
+function renderMatchCards() {
+  const container = document.getElementById('matchCards');
+  if (!container || matchesData.length === 0) return;
+
+  container.innerHTML = matchesData.map(match => {
+    const statusLabel = match.status === 'live' ? 'LIVE' : match.status === 'finished' ? 'Finished' : 'Upcoming';
+    return `
+      <div class="match-card" id="mcard-${match.id}" onclick="selectMatch('${match.id}')">
+        <div class="match-card-teams">
+          <span class="match-flag">${match.team1_flag || '⚽'}</span>
+          <span class="match-vs">vs</span>
+          <span class="match-flag">${match.team2_flag || '⚽'}</span>
+        </div>
+        <div class="match-card-title">${match.team1} vs ${match.team2}</div>
+        <div class="match-card-meta">${match.league || 'FIFA World Cup 2026'}</div>
+        <span class="match-status-pill ${match.status}">${statusLabel}</span>
+      </div>
+    `;
+  }).join('');
+
+  // Auto-select first match
+  if (matchesData.length > 0 && !currentMatchId) {
+    selectMatch(matchesData[0].id);
+  }
+}
+
+// Select a match and load its servers
+function selectMatch(matchId) {
+  const match = matchesData.find(m => m.id === matchId);
+  if (!match) return;
+
+  currentMatchId = matchId;
+  currentServerIndex = 0;
+
+  // Highlight active match card
+  document.querySelectorAll('.match-card').forEach(c => c.classList.remove('active'));
+  const card = document.getElementById('mcard-' + matchId);
+  if (card) {
+    card.classList.add('active');
+    card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
+
+  // Update title bar
+  const teamsEl = document.getElementById('matchTeams');
+  const leagueEl = document.getElementById('matchLeague');
+  if (teamsEl) teamsEl.textContent = `${match.team1_flag || ''} ${match.team1} vs ${match.team2} ${match.team2_flag || ''}`;
+  if (leagueEl) leagueEl.textContent = match.league || 'FIFA World Cup 2026';
+
+  // Update match info bar
+  const dateEl = document.getElementById('matchDate');
+  const timeEl = document.getElementById('matchTime');
+  const statusEl = document.getElementById('matchStatus');
+  if (dateEl) dateEl.textContent = match.date || '-';
+  if (timeEl) timeEl.textContent = match.time || '-';
+  if (statusEl) {
+    const statusLabel = match.status === 'live' ? '🔴 LIVE' : match.status === 'finished' ? 'Finished' : '⏳ Upcoming';
+    statusEl.textContent = statusLabel;
+    statusEl.className = 'match-status-badge ' + (match.status || 'upcoming');
+  }
+
+  // Render server tabs
+  renderServerTabs(match.servers);
+
+  // Load first server
+  _loadServerInternal(0, match.servers);
+
+  // Show embed wrapper
+  const wrapper = document.getElementById('matchEmbedWrapper');
+  if (wrapper) wrapper.style.display = 'block';
+}
+
+// Render server tab buttons
+function renderServerTabs(servers) {
+  const container = document.getElementById('serverTabs');
+  if (!container || !servers) return;
+
+  container.innerHTML = servers.map((srv, idx) => `
+    <button
+      class="server-tab-btn ${idx === 0 ? 'active' : ''}"
+      id="srv-btn-${idx}"
+      onclick="loadMatchServer(${idx})"
+    >
+      <i class="fa-solid fa-server"></i> ${srv.label}
+    </button>
+  `).join('');
+}
+
+// Internal: load server by index with explicit servers array
+function _loadServerInternal(serverIndex, servers) {
+  if (!servers || !servers[serverIndex]) return;
+  currentServerIndex = serverIndex;
+
+  document.querySelectorAll('.server-tab-btn').forEach((btn, i) => {
+    btn.classList.toggle('active', i === serverIndex);
+  });
+
+  const iframe = document.getElementById('matchIframe');
+  if (iframe) {
+    iframe.src = servers[serverIndex].url;
+  }
+}
+
+// Public: called from onclick handlers
+function loadMatchServer(serverIndex) {
+  const match = matchesData.find(m => m.id === currentMatchId);
+  if (!match) return;
+  _loadServerInternal(serverIndex, match.servers);
+}
+window.loadMatchServer = loadMatchServer;
+window.selectMatch    = selectMatch;
+
+// Show/Hide FIFA match section based on active category
+function toggleFifaSection(isVisible) {
+  const section = document.getElementById('fifaMatchSection');
+  if (!section) return;
+
+  if (isVisible) {
+    section.style.display = 'block';
+    if (matchesData.length === 0) {
+      fetchMatches();
+    } else if (document.getElementById('matchCards').children.length === 0) {
+      renderMatchCards();
+    }
+  } else {
+    section.style.display = 'none';
+  }
+}
+
+// Patch selectCategory to also toggle FIFA section
+const _origSelectCategory = selectCategory;
+selectCategory = function(categoryName, element) {
+  _origSelectCategory(categoryName, element);
+  toggleFifaSection(
+    categoryName === 'FIFA26' || categoryName.toLowerCase() === 'fifa26'
+  );
+};
+
+// Pre-fetch matches.json silently on startup
+setTimeout(() => {
+  fetch('matches.json')
+    .then(r => r.ok ? r.json() : [])
+    .then(data => { matchesData = data; })
+    .catch(() => {});
+}, 800);

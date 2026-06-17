@@ -1,0 +1,173 @@
+[
+  {
+    "id": "match_001",
+    "title": "Senegal vs France",
+    "league": "FIFA World Cup 2026 - Group I",
+    "date": "2026-06-16",
+    "time": "15:00 ET",
+    "status": "finished",
+    "team1": "Senegal",
+    "team2": "France",
+    "team1_flag": "🇸🇳",
+    "team2_flag": "🇫🇷",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" },
+      { "label": "Server 4", "url": "https://gooz.aapmains.net/new-stream-embed/52102" }
+    ]
+  },
+  {
+    "id": "match_002",
+    "title": "Iran vs New Zealand",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-16",
+    "time": "20:00 ET",
+    "status": "live",
+    "team1": "Iran",
+    "team2": "New Zealand",
+    "team1_flag": "🇮🇷",
+    "team2_flag": "🇳🇿",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  },
+  {
+    "id": "match_003",
+    "title": "Spain vs Cape Verde",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-16",
+    "time": "21:00 ET",
+    "status": "upcoming",
+    "team1": "Spain",
+    "team2": "Cape Verde",
+    "team1_flag": "🇪🇸",
+    "team2_flag": "🇨🇻",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  },
+  {
+    "id": "match_004",
+    "title": "Belgium vs Egypt",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-17",
+    "time": "15:00 ET",
+    "status": "upcoming",
+    "team1": "Belgium",
+    "team2": "Egypt",
+    "team1_flag": "🇧🇪",
+    "team2_flag": "🇪🇬",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  },
+  {
+    "id": "match_005",
+    "title": "Brazil vs Mexico",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-17",
+    "time": "18:00 ET",
+    "status": "upcoming",
+    "team1": "Brazil",
+    "team2": "Mexico",
+    "team1_flag": "🇧🇷",
+    "team2_flag": "🇲🇽",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  },
+  {
+    "id": "match_006",
+    "title": "Argentina vs Canada",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-17",
+    "time": "21:00 ET",
+    "status": "upcoming",
+    "team1": "Argentina",
+    "team2": "Canada",
+    "team1_flag": "🇦🇷",
+    "team2_flag": "🇨🇦",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  },
+  {
+    "id": "match_007",
+    "title": "England vs USA",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-18",
+    "time": "15:00 ET",
+    "status": "upcoming",
+    "team1": "England",
+    "team2": "USA",
+    "team1_flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "team2_flag": "🇺🇸",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  },
+  {
+    "id": "match_008",
+    "title": "Germany vs Japan",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-18",
+    "time": "18:00 ET",
+    "status": "upcoming",
+    "team1": "Germany",
+    "team2": "Japan",
+    "team1_flag": "🇩🇪",
+    "team2_flag": "🇯🇵",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  },
+  {
+    "id": "match_009",
+    "title": "Portugal vs Morocco",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-19",
+    "time": "15:00 ET",
+    "status": "upcoming",
+    "team1": "Portugal",
+    "team2": "Morocco",
+    "team1_flag": "🇵🇹",
+    "team2_flag": "🇲🇦",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  },
+  {
+    "id": "match_010",
+    "title": "Netherlands vs Poland",
+    "league": "FIFA World Cup 2026 - Group Stage",
+    "date": "2026-06-19",
+    "time": "18:00 ET",
+    "status": "upcoming",
+    "team1": "Netherlands",
+    "team2": "Poland",
+    "team1_flag": "🇳🇱",
+    "team2_flag": "🇵🇱",
+    "servers": [
+      { "label": "Server 1", "url": "https://gooz.aapmains.net/new-stream-embed/52098" },
+      { "label": "Server 2", "url": "https://gooz.aapmains.net/new-stream-embed/52100" },
+      { "label": "Server 3", "url": "https://gooz.aapmains.net/new-stream-embed/52101" }
+    ]
+  }
+]
