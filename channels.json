@@ -3478,5 +3478,221 @@
     "category": "News",
     "tvg_id": "",
     "url": "https://live.thebosstv.com:30443/dwlive/Somoy-TV/playlist.m3u8"
+  },
+  {
+    "id": "ch_436",
+    "name": "FIFA1",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://37b4c228.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWZyX0ZJRkFQbHVzRnJlbmNoX0hMUw/6f5437c5-e015-4754-8476-c8c6d27d3a55/1.m3u8"
+  },
+  {
+    "id": "ch_437",
+    "name": "FIFA2",
+    "logo": "https://i.postimg.cc/FsBPdbYx/image.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8"
+  },
+  {
+    "id": "ch_438",
+    "name": "FIFA3 (T Sports HD)",
+    "logo": "https://s3.aynaott.com/storage/dbc585f70a60b9855b6e13a8ce4cb6f4",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://tvsen7.aynaott.com/tsports-hd/index.m3u8?e=1779283784&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=3b4c5a2cfa872fa7f91ffbfb4aa0f658"
+  },
+  {
+    "id": "ch_439",
+    "name": "FIFA4 (T Sports)",
+    "logo": "https://s3.aynaott.com/storage/dbc585f70a60b9855b6e13a8ce4cb6f4",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=tsports&e=.m3u8"
+  },
+  {
+    "id": "ch_440",
+    "name": "FIFA5 (Sony Sports 1)",
+    "logo": "https://images.toffeelive.com/images/program/2507/logo/240x240/mobile_logo_150012001667566434.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=sony_ten1_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_441",
+    "name": "FIFA6 (Sony Sports 2)",
+    "logo": "https://images.toffeelive.com/images/program/2507/logo/240x240/mobile_logo_150012001667566434.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=sony_ten2_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_442",
+    "name": "FIFA7 (Star Sports 1)",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=star_sports_1_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_443",
+    "name": "FIFA8 (GTV Sports)",
+    "logo": "https://s3.aynaott.com/storage/417a833f6d83021c99bfc3d4176610f4",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8?e=1779283754&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=0cdc69aae0d57f2ce93a41a608a3d821"
+  },
+  {
+    "id": "ch_444",
+    "name": "FIFA9 (beIN Sports 1)",
+    "logo": "https://i.postimg.cc/cCnv6tXc/bein-sports.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=bein_sports_1&e=.m3u8"
+  },
+  {
+    "id": "ch_445",
+    "name": "FIFA10 (Fox Sports)",
+    "logo": "https://i.postimg.cc/BnJ7J3Xk/fox-sports.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=fox_sports&e=.m3u8"
+  },
+  {
+    "id": "ch_446",
+    "name": "FIFA+ English",
+    "logo": "https://i.postimg.cc/FsBPdbYx/image.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWV1X0ZJRkFQbHVzRW5nbGlzaF9ITFM/playlist.m3u8"
+  },
+  {
+    "id": "ch_447",
+    "name": "FIFA+ French",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://37b4c228.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWZyX0ZJRkFQbHVzRnJlbmNoX0hMUw/6f5437c5-e015-4754-8476-c8c6d27d3a55/1.m3u8"
+  },
+  {
+    "id": "ch_448",
+    "name": "FIFA Live 1",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://tvsen7.aynaott.com/tsports-hd/index.m3u8"
+  },
+  {
+    "id": "ch_449",
+    "name": "FIFA Live 2",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://tvsen7.aynaott.com/tsports-hd/tracks-v1a1/mono.ts.m3u8"
+  },
+  {
+    "id": "ch_450",
+    "name": "FIFA Live 3",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://tvsen7.aynaott.com/tsports-hd/index.m3u8?e=1780495065&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=10dbb0908b5515dec860bbca9d40fc09"
+  },
+  {
+    "id": "ch_451",
+    "name": "World Cup Stream 1",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1723/output/index.m3u8"
+  },
+  {
+    "id": "ch_452",
+    "name": "World Cup Stream 2",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1701/output/index.m3u8"
+  },
+  {
+    "id": "ch_453",
+    "name": "WC Live HD 1",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=tsports&e=.m3u8"
+  },
+  {
+    "id": "ch_454",
+    "name": "WC Live HD 2",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=star_sports_1_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_455",
+    "name": "WC Live HD 3",
+    "logo": "https://i.postimg.cc/TYJGfFL0/unnamed.webp",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=sony_ten1_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_456",
+    "name": "Sony Sports Ten 1 (FIFA)",
+    "logo": "https://images.toffeelive.com/images/program/2507/logo/240x240/mobile_logo_150012001667566434.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=sony_ten1_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_457",
+    "name": "Sony Sports Ten 2 (FIFA)",
+    "logo": "https://images.toffeelive.com/images/program/2507/logo/240x240/mobile_logo_150012001667566434.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=sony_ten2_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_458",
+    "name": "T Sports (FIFA LIVE)",
+    "logo": "https://s3.aynaott.com/storage/dbc585f70a60b9855b6e13a8ce4cb6f4",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://tvsen7.aynaott.com/tsports-hd/index.m3u8?e=1779283784&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=3b4c5a2cfa872fa7f91ffbfb4aa0f658"
+  },
+  {
+    "id": "ch_459",
+    "name": "Star Sports 1 (FIFA)",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=star_sports_1_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_460",
+    "name": "Star Sports 2 (FIFA)",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://mflixott.com/tv/toffee-by-maruf/live.php?id=star_sports_2_hd&e=.m3u8"
+  },
+  {
+    "id": "ch_461",
+    "name": "GTV (FIFA)",
+    "logo": "https://s3.aynaott.com/storage/417a833f6d83021c99bfc3d4176610f4",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://tvsen5.aynaott.com/Ravc7gPCZpxk/index.m3u8?e=1779283754&u=78be6644-0a65-48ec-81a4-089ac65a2619&token=0cdc69aae0d57f2ce93a41a608a3d821"
+  },
+  {
+    "id": "ch_462",
+    "name": "Maasranga (FIFA)",
+    "logo": "https://s3.aynaott.com/storage/1b5cb8c7901739cd7d201a38d2ab4737",
+    "category": "FIFA26",
+    "tvg_id": "",
+    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1722/output/index.m3u8"
   }
 ]
