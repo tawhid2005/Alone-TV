@@ -15,7 +15,7 @@
   অবশ্যই আপনার GitHub repository-তে থাকতে হবে।
   নিচের দুটি URL আপনার GitHub username দিয়ে বদলান:
   
-  GITHUB_USER = tawhidh2007-byte
+  GITHUB_USER = tawhid2005
   GITHUB_REPO = Alone-TV
   =============================================
 -->
@@ -40,7 +40,7 @@
   <meta content='Watch FIFA World Cup 2026 Live Stream, live football matches, sports channels, and entertainment TV in HD for free.' property='og:description'/>
   <meta expr:content='data:blog.homepageUrl' property='og:url'/>
   <meta content='ALONE TV' property='og:site_name'/>
-  <meta content='https://raw.githubusercontent.com/tawhidh2007-byte/Alone-TV/main/assets/seo_banner.png' property='og:image'/>
+  <meta content='https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/assets/seo_banner.png' property='og:image'/>
   <meta content='1200' property='og:image:width'/>
   <meta content='630' property='og:image:height'/>
 
@@ -48,7 +48,7 @@
   <meta content='summary_large_image' name='twitter:card'/>
   <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' name='twitter:title'/>
   <meta content='Watch FIFA World Cup 2026 Live Stream, sports channels, and live TV in HD for free on ALONE TV.' name='twitter:description'/>
-  <meta content='https://raw.githubusercontent.com/tawhidh2007-byte/Alone-TV/main/assets/seo_banner.png' name='twitter:image'/>
+  <meta content='https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/assets/seo_banner.png' name='twitter:image'/>
 
   <!-- DNS Prefetch for speed -->
   <link href='https://fonts.googleapis.com' rel='dns-prefetch'/>
@@ -488,7 +488,7 @@ body {
         <button class='clear-search-btn' id='clearSearchBtn'><i class='fa-solid fa-xmark'></i></button>
       </div>
       <div class='header-actions'>
-        <a class='github-btn' href='https://github.com/tawhidh2007-byte/Alone-TV' rel='noopener' target='_blank'>
+        <a class='github-btn' href='https://github.com/tawhid2005/Alone-TV' rel='noopener' target='_blank'>
           <i class='fa-brands fa-github'></i> <span>GitHub</span>
         </a>
       </div>
@@ -775,8 +775,8 @@ body {
    ==========================================
    ⚠️ আপনার GitHub username এবং repo নাম নিচে সঠিক দিন
    ========================================== */
-var CHANNELS_JSON_URL = 'https://raw.githubusercontent.com/tawhidh2007-byte/Alone-TV/main/channels.json';
-var MATCHES_JSON_URL  = 'https://raw.githubusercontent.com/tawhidh2007-byte/Alone-TV/main/matches.json';
+var CHANNELS_JSON_URL = 'https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/channels.json';
+var MATCHES_JSON_URL  = 'https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/matches.json';
 
 /* ==========================================
    APP STATE & INITIALIZATION
