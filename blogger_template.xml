@@ -395,55 +395,61 @@ body{font-family:'Inter',sans-serif;background-color:var(--bg-primary);color:var
       </div>
     </header>
 
-    <div class='ad-container ad-top ad-desktop-only' id='topAdDesktop'>
-      <script type='text/javascript'>
-      //<![CDATA[
-        atOptions = {'key':'bb35470de6b043368996d6d40e6a362f','format':'iframe','height':90,'width':728,'params':{}};
-      //]]>
-      </script>
-      <script src='https://www.highperformanceformat.com/bb35470de6b043368996d6d40e6a362f/invoke.js' type='text/javascript'/>
-    </div>
+    <b:if cond='!data:blog.isMobileRequest'>
+      <div class='ad-container ad-top ad-desktop-only' id='topAdDesktop'>
+        <script type='text/javascript'>
+        //<![CDATA[
+          atOptions = {'key':'bb35470de6b043368996d6d40e6a362f','format':'iframe','height':90,'width':728,'params':{}};
+        //]]>
+        </script>
+        <script src='https://www.highperformanceformat.com/bb35470de6b043368996d6d40e6a362f/invoke.js' type='text/javascript'/>
+      </div>
+    </b:if>
 
-    <div class='ad-container ad-top ad-mobile-only' id='topAdMobile'>
-      <script type='text/javascript'>
-      //<![CDATA[
-        atOptions = {'key':'0eb0a4c7c0880c284f6f75819135a509','format':'iframe','height':50,'width':320,'params':{}};
-      //]]>
-      </script>
-      <script src='https://www.highperformanceformat.com/0eb0a4c7c0880c284f6f75819135a509/invoke.js' type='text/javascript'/>
-    </div>
+    <b:if cond='data:blog.isMobileRequest'>
+      <div class='ad-container ad-top ad-mobile-only' id='topAdMobile'>
+        <script type='text/javascript'>
+        //<![CDATA[
+          atOptions = {'key':'0eb0a4c7c0880c284f6f75819135a509','format':'iframe','height':50,'width':320,'params':{}};
+        //]]>
+        </script>
+        <script src='https://www.highperformanceformat.com/0eb0a4c7c0880c284f6f75819135a509/invoke.js' type='text/javascript'/>
+      </div>
+    </b:if>
 
     <div class='main-layout'>
       <aside class='sidebar'>
         <div class='sidebar-title'>Categories</div>
         <div class='category-list' id='categoryList'/>
 
-        <div class='ad-container ad-sidebar' id='sidebarAd'>
-          <script type='text/javascript'>
-          //<![CDATA[
-            atOptions = {'key':'1cab77e98287e4c8ee757e4d8c6f57a4','format':'iframe','height':250,'width':300,'params':{}};
-          //]]>
-          </script>
-          <script src='https://www.highperformanceformat.com/1cab77e98287e4c8ee757e4d8c6f57a4/invoke.js' type='text/javascript'/>
-        </div>
+        <b:if cond='!data:blog.isMobileRequest'>
+          <div class='ad-container ad-sidebar' id='sidebarAd'>
+            <script type='text/javascript'>
+            //<![CDATA[
+              atOptions = {'key':'1cab77e98287e4c8ee757e4d8c6f57a4','format':'iframe','height':250,'width':300,'params':{}};
+            //]]>
+            </script>
+            <script src='https://www.highperformanceformat.com/1cab77e98287e4c8ee757e4d8c6f57a4/invoke.js' type='text/javascript'/>
+          </div>
 
-        <div class='ad-container ad-sidebar-tall ad-desktop-only' id='sidebarTallAd'>
-          <script type='text/javascript'>
-          //<![CDATA[
-            atOptions = {'key':'71d75362f9bccebcbd277251fbd446d3','format':'iframe','height':600,'width':160,'params':{}};
-          //]]>
-          </script>
-          <script src='https://www.highperformanceformat.com/71d75362f9bccebcbd277251fbd446d3/invoke.js' type='text/javascript'/>
-        </div>
+          <div class='ad-container ad-sidebar-tall ad-desktop-only' id='sidebarTallAd'>
+            <script type='text/javascript'>
+            //<![CDATA[
+              atOptions = {'key':'71d75362f9bccebcbd277251fbd446d3','format':'iframe','height':600,'width':160,'params':{}};
+            //]]>
+            </script>
+            <script src='https://www.highperformanceformat.com/71d75362f9bccebcbd277251fbd446d3/invoke.js' type='text/javascript'/>
+          </div>
 
-        <div class='ad-container ad-sidebar-half ad-desktop-only' id='sidebarHalfAd'>
-          <script type='text/javascript'>
-          //<![CDATA[
-            atOptions = {'key':'ef49e66993b669ea831a8acc6d17fb46','format':'iframe','height':300,'width':160,'params':{}};
-          //]]>
-          </script>
-          <script src='https://www.highperformanceformat.com/ef49e66993b669ea831a8acc6d17fb46/invoke.js' type='text/javascript'/>
-        </div>
+          <div class='ad-container ad-sidebar-half ad-desktop-only' id='sidebarHalfAd'>
+            <script type='text/javascript'>
+            //<![CDATA[
+              atOptions = {'key':'ef49e66993b669ea831a8acc6d17fb46','format':'iframe','height':300,'width':160,'params':{}};
+            //]]>
+            </script>
+            <script src='https://www.highperformanceformat.com/ef49e66993b669ea831a8acc6d17fb46/invoke.js' type='text/javascript'/>
+          </div>
+        </b:if>
       </aside>
 
       <main class='content-area'>
@@ -482,14 +488,16 @@ body{font-family:'Inter',sans-serif;background-color:var(--bg-primary);color:var
             </div>
           </div>
 
-          <div class='ad-below-player ad-container ad-desktop-only' id='belowPlayerAd'>
-            <script type='text/javascript'>
-            //<![CDATA[
-              atOptions = {'key':'3653bbcab72aab4364fa4ba5fb7920fb','format':'iframe','height':60,'width':468,'params':{}};
-            //]]>
-            </script>
-            <script src='https://www.highperformanceformat.com/3653bbcab72aab4364fa4ba5fb7920fb/invoke.js' type='text/javascript'/>
-          </div>
+          <b:if cond='!data:blog.isMobileRequest'>
+            <div class='ad-below-player ad-container ad-desktop-only' id='belowPlayerAd'>
+              <script type='text/javascript'>
+              //<![CDATA[
+                atOptions = {'key':'3653bbcab72aab4364fa4ba5fb7920fb','format':'iframe','height':60,'width':468,'params':{}};
+              //]]>
+              </script>
+              <script src='https://www.highperformanceformat.com/3653bbcab72aab4364fa4ba5fb7920fb/invoke.js' type='text/javascript'/>
+            </div>
+          </b:if>
         </section>
 
         <section class='fifa-match-section' id='fifaMatchSection' style='display:none;'>
@@ -635,8 +643,8 @@ setTimeout(function(){fetch(MATCHES_URL).then(function(r){return r.ok?r.json():[
   //]]>
   </script>
 
-  <script src='https://pl29736919.effectivecpmnetwork.com/42/46/3e/42463e1d48ccaa804a3a46d5b48d54f6.js'/>
-  <script src='https://pl29736922.effectivecpmnetwork.com/2c/7c/c6/2c7cc68fb62138aaecc833c758e4c3a7.js'/>
+  <script async='async' src='https://pl29736919.effectivecpmnetwork.com/42/46/3e/42463e1d48ccaa804a3a46d5b48d54f6.js'/>
+  <script async='async' src='https://pl29736922.effectivecpmnetwork.com/2c/7c/c6/2c7cc68fb62138aaecc833c758e4c3a7.js'/>
 
 </body>
 </html>
