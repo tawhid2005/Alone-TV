@@ -1,24 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<!--
-  =============================================
-  ALONE TV — Blogger Template
-  =============================================
-  কিভাবে ব্যবহার করবেন:
-  1. Blogger Dashboard > Theme > Edit HTML
-  2. সমস্ত কোড Delete করুন
-  3. এই সম্পূর্ণ ফাইলটি Paste করুন
-  4. Save করুন
-  =============================================
-  
-  ⚠️ IMPORTANT: channels.json এবং matches.json
-  অবশ্যই আপনার GitHub repository-তে থাকতে হবে।
-  নিচের দুটি URL আপনার GitHub username দিয়ে বদলান:
-  
-  GITHUB_USER = tawhid2005
-  GITHUB_REPO = Alone-TV
-  =============================================
--->
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gbl' xmlns:data='http://www.google.com/2005/gbl' xmlns:expr='http://www.google.com/2005/gbl'>
 
 <head>
@@ -26,14 +7,12 @@
   <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
   <b:include data='blog' name='all-head-content'/>
 
-  <!-- ====== SEO META TAGS ====== -->
   <title>ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Channels Free</title>
-  <meta content='Watch FIFA World Cup 2026 Live Stream for free. High-definition live sports, football matches, cricket, and top entertainment channels. Stream live FIFA 2026, Iran vs New Zealand, Spain vs Cape Verde, Belgium vs Egypt and top TV channels in HD.' name='description'/>
-  <meta content='fifa world cup live, live world cup, fifa world cup 2026 live, live fifa world cup 2026, iran vs new zealand live, spain vs cape verde live, belgium vs egypt live, watch live football free, sports live stream, live tv website, bangla tv live, t sports live' name='keywords'/>
+  <meta content='Watch FIFA World Cup 2026 Live Stream for free. High-definition live sports, football matches, cricket, and top entertainment channels. Stream live FIFA 2026 on ALONE TV.' name='description'/>
+  <meta content='fifa world cup live, live world cup, fifa world cup 2026 live, iran vs new zealand live, spain vs cape verde live, belgium vs egypt live, watch live football free, sports live stream, live tv website, bangla tv live, t sports live' name='keywords'/>
   <meta content='index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
   <link expr:href='data:blog.homepageUrl' rel='canonical'/>
 
-  <!-- Open Graph / Facebook -->
   <meta content='en_US' property='og:locale'/>
   <meta content='website' property='og:type'/>
   <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' property='og:title'/>
@@ -44,13 +23,11 @@
   <meta content='1200' property='og:image:width'/>
   <meta content='630' property='og:image:height'/>
 
-  <!-- Twitter Card -->
   <meta content='summary_large_image' name='twitter:card'/>
   <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' name='twitter:title'/>
   <meta content='Watch FIFA World Cup 2026 Live Stream, sports channels, and live TV in HD for free on ALONE TV.' name='twitter:description'/>
   <meta content='https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/assets/seo_banner.png' name='twitter:image'/>
 
-  <!-- DNS Prefetch for speed -->
   <link href='https://fonts.googleapis.com' rel='dns-prefetch'/>
   <link href='https://fonts.gstatic.com' rel='dns-prefetch'/>
   <link href='https://cdnjs.cloudflare.com' rel='dns-prefetch'/>
@@ -59,76 +36,56 @@
   <link href='https://pl29736920.effectivecpmnetwork.com' rel='dns-prefetch'/>
   <link href='https://raw.githubusercontent.com' rel='dns-prefetch'/>
 
-  <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com' rel='preconnect'/>
   <link crossorigin='' href='https://fonts.gstatic.com' rel='preconnect'/>
   <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Outfit:wght@400;600;700;800&amp;display=swap' rel='stylesheet'/>
-
-  <!-- FontAwesome -->
   <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' media='print' onload='this.media=&quot;all&quot;' rel='stylesheet'/>
   <noscript><link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css' rel='stylesheet'/></noscript>
-
-  <!-- HLS.js preload -->
   <link as='script' href='https://cdn.jsdelivr.net/npm/hls.js@1.5.15/dist/hls.min.js' rel='preload'/>
 
-  <!-- JSON-LD Structured Data -->
   <script type='application/ld+json'>
+  <![CDATA[
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "ALONE TV",
-    "url": "https://alonetv.blogspot.com/",
+    "url": "https://alone-tv.blogspot.com/",
     "description": "Watch FIFA World Cup 2026 Live Stream, live football matches, and sports TV channels in HD for free.",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://alonetv.blogspot.com/?search={search_term_string}",
+      "target": "https://alone-tv.blogspot.com/?search={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
+  ]]>
   </script>
 
   <script type='application/ld+json'>
+  <![CDATA[
   [
     {
       "@context": "https://schema.org",
       "@type": "SportsEvent",
       "name": "FIFA World Cup 2026 Live Stream",
       "startDate": "2026-06-16T18:00:00+00:00",
-      "description": "Watch FIFA World Cup 2026 live streaming. Free HD sports and football TV online.",
-      "sport": "Soccer",
-      "location": { "@type": "Place", "name": "World Cup Stadiums" }
+      "description": "Watch FIFA World Cup 2026 live streaming free HD sports.",
+      "sport": "Soccer"
     },
     {
       "@context": "https://schema.org",
       "@type": "SportsEvent",
       "name": "Iran vs New Zealand Live Stream",
       "startDate": "2026-06-16T20:00:00+00:00",
-      "description": "Watch Iran vs New Zealand live football coverage on ALONE TV.",
-      "sport": "Soccer",
-      "competitor": [
-        { "@type": "SportsTeam", "name": "Iran" },
-        { "@type": "SportsTeam", "name": "New Zealand" }
-      ]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "SportsEvent",
-      "name": "Spain vs Cape Verde Live Stream",
-      "startDate": "2026-06-16T21:00:00+00:00",
-      "description": "Live coverage of Spain vs Cape Verde football match.",
-      "sport": "Soccer",
-      "competitor": [
-        { "@type": "SportsTeam", "name": "Spain" },
-        { "@type": "SportsTeam", "name": "Cape Verde" }
-      ]
+      "description": "Watch Iran vs New Zealand live on ALONE TV.",
+      "sport": "Soccer"
     }
   ]
+  ]]>
   </script>
 
-  <!-- ====== INLINE CSS ====== -->
-  <style>
+  <b:skin><![CDATA[
 /* ==========================================
-   THEME VARIABLES & CORE DESIGN SYSTEM
+   THEME VARIABLES
    ========================================== */
 :root {
   --bg-primary: #0a0b10;
@@ -136,323 +93,240 @@
   --bg-tertiary: #191b2d;
   --accent-primary: #6366f1;
   --accent-secondary: #06b6d4;
-  --accent-success: #10b981;
   --accent-warning: #f59e0b;
   --accent-danger: #ef4444;
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-  --border-color: rgba(255, 255, 255, 0.05);
-  --border-hover: rgba(99, 102, 241, 0.3);
-  --glass-bg: rgba(18, 20, 32, 0.7);
+  --border-color: rgba(255,255,255,0.05);
+  --border-hover: rgba(99,102,241,0.3);
+  --glass-bg: rgba(18,20,32,0.7);
   --glass-blur: blur(16px);
-  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
-  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.6);
-  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.8);
-  --shadow-neon: 0 0 15px rgba(99, 102, 241, 0.4);
+  --transition-fast: 0.2s cubic-bezier(0.4,0,0.2,1);
+  --transition-normal: 0.3s cubic-bezier(0.4,0,0.2,1);
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.5);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.6);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,0.8);
+  --shadow-neon: 0 0 15px rgba(99,102,241,0.4);
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  overflow-x: hidden;
-  height: 100vh;
-  background-image: radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.05) 0%, transparent 40%), radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 40%);
-  background-attachment: fixed;
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background-color:var(--bg-primary);color:var(--text-primary);overflow-x:hidden;height:100vh;background-image:radial-gradient(circle at 10% 20%,rgba(99,102,241,0.05) 0%,transparent 40%),radial-gradient(circle at 90% 80%,rgba(6,182,212,0.05) 0%,transparent 40%);background-attachment:fixed}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg-primary)}
+::-webkit-scrollbar-thumb{background:var(--border-hover);border-radius:10px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent-primary)}
+#header-wrapper,.navbar,#navbar-iframe{display:none!important}
+.widget{margin:0!important}
+#main-wrapper,#outer-wrapper,#wrapper{width:100%!important;max-width:100%!important;padding:0!important;margin:0!important;background:none!important}
+#blog-pager,.post-footer,.post-title,.post-author,.comments,#comment-form,.comment-thread{display:none!important}
+.post-body{margin:0!important;padding:0!important}
+.date-header{display:none!important}
+.app-container{display:flex;flex-direction:column;height:100vh;position:relative}
+.app-header{display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:70px;background-color:var(--glass-bg);backdrop-filter:var(--glass-blur);border-bottom:1px solid var(--border-color);z-index:10;box-shadow:var(--shadow-sm);position:sticky;top:0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-logo-container{display:flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--accent-primary) 0%,var(--accent-secondary) 100%);box-shadow:var(--shadow-neon)}
+.brand-logo-container i{font-size:16px;color:#fff;margin-left:2px}
+.brand-name{font-family:'Outfit',sans-serif;font-weight:800;font-size:20px;letter-spacing:0.5px;background:linear-gradient(135deg,#fff 60%,var(--text-secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.accent-text{background:linear-gradient(135deg,var(--accent-primary) 0%,var(--accent-secondary) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:800}
+.search-container{position:relative;width:100%;max-width:450px;display:flex;align-items:center}
+.search-icon{position:absolute;left:16px;color:var(--text-muted);font-size:14px;pointer-events:none;transition:var(--transition-fast)}
+#searchInput{width:100%;height:42px;padding:0 44px;border-radius:12px;background-color:rgba(255,255,255,0.03);border:1px solid var(--border-color);color:var(--text-primary);font-family:inherit;font-size:14px;transition:var(--transition-normal)}
+#searchInput:focus{outline:none;background-color:rgba(255,255,255,0.06);border-color:var(--accent-primary);box-shadow:0 0 10px rgba(99,102,241,0.15)}
+.clear-search-btn{position:absolute;right:16px;background:none;border:none;color:var(--text-muted);cursor:pointer;display:none;font-size:14px;transition:var(--transition-fast)}
+.clear-search-btn:hover{color:var(--text-primary)}
+.header-actions{display:flex;align-items:center}
+.github-btn{display:flex;align-items:center;gap:8px;padding:8px 16px;border-radius:10px;background-color:var(--bg-tertiary);border:1px solid var(--border-color);color:var(--text-primary);text-decoration:none;font-size:13px;font-weight:500;transition:var(--transition-normal)}
+.github-btn:hover{background-color:var(--accent-primary);border-color:var(--accent-primary);box-shadow:var(--shadow-neon)}
+.main-layout{display:flex;flex:1;overflow:hidden;height:calc(100vh - 70px)}
+.sidebar{width:250px;background-color:var(--bg-secondary);border-right:1px solid var(--border-color);display:flex;flex-direction:column;overflow-y:auto;flex-shrink:0}
+.sidebar-title{padding:24px 20px 12px 20px;font-family:'Outfit',sans-serif;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-muted)}
+.category-list{display:flex;flex-direction:column;gap:4px;padding:0 12px 24px 12px}
+.category-pill{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-radius:10px;background:none;border:none;color:var(--text-secondary);text-align:left;font-family:inherit;font-size:13px;font-weight:500;cursor:pointer;transition:var(--transition-normal)}
+.category-pill i{margin-right:12px;font-size:14px;width:16px;text-align:center;transition:var(--transition-fast)}
+.category-pill:hover{color:var(--text-primary);background-color:rgba(255,255,255,0.02)}
+.category-pill.active{color:#fff;background:linear-gradient(135deg,var(--accent-primary) 0%,rgba(99,102,241,0.4) 100%);font-weight:600;box-shadow:0 4px 12px rgba(99,102,241,0.15)}
+.category-pill.active i{color:#fff}
+.category-count{font-size:11px;background-color:rgba(255,255,255,0.05);color:var(--text-muted);padding:2px 6px;border-radius:20px;transition:var(--transition-fast)}
+.category-pill.active .category-count{background-color:rgba(255,255,255,0.15);color:#fff}
+.content-area{flex:1;display:flex;flex-direction:column;overflow-y:auto;background-color:var(--bg-primary)}
+.player-section{background-color:var(--bg-secondary);border-bottom:1px solid var(--border-color);padding:24px;display:flex;flex-direction:column;align-items:center}
+.player-wrapper{position:relative;width:100%;max-width:900px;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background-color:#000;box-shadow:var(--shadow-lg);border:1px solid var(--border-color)}
+#player{position:absolute;top:0;left:0;width:100%;height:100%;display:block!important;visibility:visible!important;background:#000;object-fit:contain;z-index:1}
+.custom-controls{position:absolute;bottom:0;left:0;right:0;height:56px;padding:0 16px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(to top,rgba(0,0,0,0.85) 0%,transparent 100%);opacity:0;transition:opacity 0.3s ease;z-index:10}
+.player-wrapper:hover .custom-controls,.player-wrapper.show-controls .custom-controls{opacity:1}
+.controls-left,.controls-right{display:flex;align-items:center;gap:12px}
+.ctrl-btn{background:none;border:none;color:#fff;font-size:18px;cursor:pointer;padding:6px;border-radius:6px;transition:all 0.2s ease;display:flex;align-items:center;justify-content:center;line-height:1}
+.ctrl-btn:hover{background:rgba(255,255,255,0.15);transform:scale(1.1)}
+.volume-group{display:flex;align-items:center;gap:8px}
+.volume-slider{-webkit-appearance:none;appearance:none;width:70px;height:4px;border-radius:2px;background:rgba(255,255,255,0.3);cursor:pointer;outline:none}
+.volume-slider::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:14px;border-radius:50%;background:var(--accent-primary);cursor:pointer;box-shadow:0 0 6px rgba(99,102,241,0.6)}
+.live-tag{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#fff;background:rgba(239,68,68,0.8);padding:3px 10px;border-radius:4px}
+.live-dot{width:6px;height:6px;background:#fff;border-radius:50%;animation:blink 1.2s infinite}
+.player-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.85);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;z-index:5;color:#fff}
+.player-overlay span{font-size:14px;font-weight:500;letter-spacing:0.5px}
+.spinner{width:44px;height:44px;border:3px solid rgba(255,255,255,0.1);border-radius:50%;border-top-color:var(--accent-primary);border-right-color:var(--accent-secondary);animation:spin 1s infinite linear}
+@keyframes spin{to{transform:rotate(360deg)}}
+.error-overlay{background-color:rgba(10,11,16,0.95)}
+.error-icon{font-size:44px;color:var(--accent-danger);animation:pulse 2s infinite}
+.error-msg{color:var(--text-secondary);text-align:center;max-width:80%}
+@keyframes pulse{0%{transform:scale(1);opacity:0.8}50%{transform:scale(1.08);opacity:1}100%{transform:scale(1);opacity:0.8}}
+.channel-info-bar{display:flex;align-items:center;gap:16px;width:100%;max-width:900px;margin-top:16px;padding:0 8px}
+.current-channel-logo-container{width:50px;height:50px;border-radius:12px;overflow:hidden;background-color:var(--bg-tertiary);border:1px solid var(--border-color);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.current-channel-logo-container img{width:100%;height:100%;object-fit:contain;padding:4px}
+.channel-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;color:var(--accent-primary);background:linear-gradient(135deg,rgba(99,102,241,0.1) 0%,rgba(6,182,212,0.1) 100%)}
+.current-channel-details{flex:1}
+.channel-name-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;width:100%}
+.current-channel-details h1{font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;color:var(--text-primary)}
+.favorite-toggle-btn{background:none;border:none;color:var(--text-muted);font-size:18px;cursor:pointer;transition:var(--transition-fast)}
+.favorite-toggle-btn:hover{color:var(--accent-warning);transform:scale(1.1)}
+.favorite-toggle-btn.is-favorite{color:var(--accent-warning)}
+.channel-category-badge{display:inline-block;font-size:11px;color:var(--accent-primary);background-color:rgba(99,102,241,0.1);padding:3px 8px;border-radius:6px;font-weight:600;text-transform:uppercase;margin-top:4px}
+.ad-container{display:flex;justify-content:center;align-items:center;background-color:rgba(255,255,255,0.01);border:1px dashed var(--border-color);border-radius:8px;overflow:hidden;transition:var(--transition-normal);margin:0 auto;color:var(--text-muted);font-size:11px;letter-spacing:0.5px;text-transform:uppercase;position:relative}
+.ad-container:empty{display:none!important}
+.ad-desktop-only{display:flex!important}
+.ad-mobile-only{display:none!important}
+.ad-top{width:100%;max-width:900px;min-height:90px;margin-top:16px;margin-bottom:8px}
+.ad-player-bottom{width:100%;max-width:900px;min-height:90px;margin-top:16px}
+.ad-sidebar{width:calc(100% - 24px);margin:16px 12px;min-height:250px}
+.ad-sidebar-tall{width:160px;min-height:600px;margin:16px auto}
+.ad-sidebar-half{width:160px;min-height:300px;margin:16px auto}
+.ad-below-player{width:100%;max-width:468px;min-height:60px;margin-top:16px}
+.alt-server-btn{display:flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;background:linear-gradient(135deg,rgba(6,182,212,0.1) 0%,rgba(99,102,241,0.1) 100%);border:1px solid var(--border-hover);color:var(--text-primary);font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;transition:var(--transition-normal);margin-left:auto;box-shadow:0 0 10px rgba(6,182,212,0.1)}
+.alt-server-btn i{color:var(--accent-secondary);animation:bounce-horizontal 2s infinite ease-in-out}
+@keyframes bounce-horizontal{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+.alt-server-btn:hover{background:linear-gradient(135deg,var(--accent-secondary) 0%,var(--accent-primary) 100%);border-color:var(--accent-primary);box-shadow:0 0 15px rgba(6,182,212,0.4);transform:translateY(-2px)}
+.grid-section{padding:24px;flex:1}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.section-header h2{font-family:'Outfit',sans-serif;font-size:18px;font-weight:700;letter-spacing:0.5px}
+.channel-count-badge{font-size:12px;color:var(--text-secondary);background-color:var(--bg-secondary);padding:4px 10px;border-radius:20px;border:1px solid var(--border-color)}
+.channel-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:16px}
+.channel-card{background-color:var(--bg-secondary);border:1px solid var(--border-color);border-radius:12px;padding:12px;display:flex;flex-direction:column;align-items:center;text-align:center;cursor:pointer;position:relative;transition:all 0.2s cubic-bezier(0.4,0,0.2,1);user-select:none}
+.channel-card:hover{transform:translateY(-4px);border-color:var(--accent-primary);background-color:var(--bg-tertiary);box-shadow:0 8px 20px rgba(0,0,0,0.4)}
+.channel-card.active{border-color:var(--accent-primary);background-color:rgba(99,102,241,0.05);box-shadow:var(--shadow-neon)}
+.card-logo-container{width:70px;height:70px;border-radius:10px;overflow:hidden;background-color:var(--bg-primary);display:flex;align-items:center;justify-content:center;margin-bottom:12px;position:relative;border:1px solid var(--border-color);transition:var(--transition-fast)}
+.card-logo-container img{width:100%;height:100%;object-fit:contain;padding:6px}
+.card-fallback{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:'Outfit',sans-serif;font-weight:700;font-size:16px}
+.card-name{font-size:12px;font-weight:600;color:var(--text-primary);line-height:1.4;height:34px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.live-badge{position:absolute;top:8px;right:8px;background-color:var(--accent-danger);color:#fff;font-size:9px;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;letter-spacing:0.5px;box-shadow:0 0 8px rgba(239,68,68,0.5);animation:blink 1.5s infinite}
+@keyframes blink{0%{opacity:0.8}50%{opacity:0.4}100%{opacity:0.8}}
+.app-loader-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background-color:var(--bg-primary);display:flex;align-items:center;justify-content:center;z-index:100;transition:opacity 0.5s ease,visibility 0.5s ease}
+.app-loader-overlay.hidden{opacity:0;visibility:hidden}
+.loader-content{display:flex;flex-direction:column;align-items:center;gap:24px}
+.logo-loading{animation:bounce 2s infinite ease-in-out}
+.logo-loading .brand-logo-container{width:55px;height:55px;border-radius:14px}
+.logo-loading .brand-logo-container i{font-size:24px;margin-left:3px}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.loading-bar-container{width:180px;height:4px;background-color:rgba(255,255,255,0.05);border-radius:20px;overflow:hidden;position:relative}
+.loading-bar{width:60px;height:100%;background:linear-gradient(90deg,var(--accent-primary) 0%,var(--accent-secondary) 100%);border-radius:20px;position:absolute;animation:slide 1.5s infinite ease-in-out}
+@keyframes slide{0%{left:-60px}100%{left:180px}}
+.loading-status{font-size:13px;color:var(--text-secondary);font-weight:500}
+.hidden{display:none!important}
+.mobile-nav{display:none;position:fixed;bottom:0;left:0;width:100%;height:65px;background-color:rgba(18,20,32,0.95);backdrop-filter:var(--glass-blur);border-top:1px solid var(--border-color);z-index:99;justify-content:space-around;align-items:center;box-shadow:0 -4px 15px rgba(0,0,0,0.4)}
+.nav-item{background:none;border:none;color:var(--text-secondary);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-size:11px;font-weight:500;font-family:inherit;cursor:pointer;flex:1;height:100%;transition:var(--transition-fast)}
+.nav-item i{font-size:18px;transition:var(--transition-fast)}
+.nav-item.active{color:var(--accent-primary);background:radial-gradient(circle at bottom,rgba(99,102,241,0.05) 0%,transparent 60%)}
+.nav-item.active i{transform:translateY(-2px);text-shadow:0 0 10px rgba(99,102,241,0.5);color:var(--accent-primary)}
+.ad-overlay-modal{position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(6,7,10,0.95);backdrop-filter:blur(15px);display:flex;align-items:center;justify-content:center;z-index:200;padding:20px;animation:fadeIn var(--transition-normal)}
+.ad-overlay-content{background-color:var(--bg-secondary);border:1px solid var(--border-color);border-radius:20px;max-width:420px;width:100%;padding:30px;text-align:center;box-shadow:var(--shadow-lg),0 0 30px rgba(99,102,241,0.1);display:flex;flex-direction:column;align-items:center;gap:16px;animation:scaleUp var(--transition-normal)}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes scaleUp{from{transform:scale(0.9);opacity:0}to{transform:scale(1);opacity:1}}
+.overlay-play-icon{width:60px;height:60px;background:linear-gradient(135deg,var(--accent-primary) 0%,var(--accent-secondary) 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;box-shadow:var(--shadow-neon);animation:pulse-ring 2s infinite;margin-bottom:8px}
+.overlay-play-icon i{margin-left:4px}
+@keyframes pulse-ring{0%{box-shadow:0 0 0 0 rgba(99,102,241,0.4)}70%{box-shadow:0 0 0 15px rgba(99,102,241,0)}100%{box-shadow:0 0 0 0 rgba(99,102,241,0)}}
+.ad-overlay-content h3{font-family:'Outfit',sans-serif;font-size:20px;font-weight:700;color:var(--text-primary)}
+.ad-overlay-content p{font-size:13px;color:var(--text-secondary);line-height:1.6}
+.ad-overlay-btn{width:100%;height:48px;border-radius:12px;border:none;background:linear-gradient(135deg,var(--accent-primary) 0%,var(--accent-secondary) 100%);color:#fff;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:var(--transition-normal);box-shadow:var(--shadow-neon)}
+.ad-overlay-btn:hover{filter:brightness(1.1);transform:translateY(-2px);box-shadow:0 0 20px rgba(99,102,241,0.6)}
+.seo-footer{background-color:var(--bg-secondary);border-top:1px solid var(--border-color);padding:40px 24px;color:var(--text-secondary);font-size:13px;line-height:1.6;margin-top:40px}
+.seo-container{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+.seo-footer h2{font-family:'Outfit',sans-serif;color:var(--text-primary);font-size:20px;font-weight:700;margin-bottom:8px}
+.seo-footer h3{font-family:'Outfit',sans-serif;color:var(--text-primary);font-size:15px;font-weight:600;margin-bottom:8px}
+.seo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:10px}
+.seo-card{background-color:var(--bg-tertiary);border:1px solid var(--border-color);border-radius:12px;padding:20px}
+.seo-card ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.seo-card ul li strong{color:var(--accent-secondary)}
+.seo-tag-cloud{text-align:center;font-size:11px;color:var(--text-muted);border-top:1px dashed var(--border-color);padding-top:16px;margin-top:12px}
+.seo-tag-cloud span{display:inline-block;margin:4px;background-color:rgba(255,255,255,0.02);padding:2px 8px;border-radius:4px}
+.fifa-match-section{padding:20px 24px 0;animation:fadeInUp 0.4s ease}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.fifa-section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.fifa-badge{display:flex;align-items:center;gap:8px;font-family:'Outfit',sans-serif;font-size:14px;font-weight:700;background:linear-gradient(135deg,#f59e0b 0%,#ef4444 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:0.5px}
+.fifa-live-badge{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#ef4444;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.25);padding:4px 10px;border-radius:20px}
+.fifa-live-badge .live-dot{width:6px;height:6px;background:#ef4444;border-radius:50%;animation:blink 1.2s infinite}
+.match-cards-row{display:flex;gap:12px;overflow-x:auto;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--border-hover) transparent}
+.match-cards-row::-webkit-scrollbar{height:4px}
+.match-card{flex-shrink:0;min-width:200px;background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:14px;padding:14px 16px;cursor:pointer;transition:all 0.25s ease;position:relative;overflow:hidden}
+.match-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#f59e0b,#ef4444);opacity:0;transition:opacity 0.25s}
+.match-card:hover{border-color:var(--accent-primary);transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.5)}
+.match-card:hover::before,.match-card.active::before{opacity:1}
+.match-card.active{border-color:#f59e0b;background:rgba(245,158,11,0.07);box-shadow:0 0 20px rgba(245,158,11,0.15)}
+.match-card-teams{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.match-flag{font-size:22px;line-height:1}
+.match-vs{font-family:'Outfit',sans-serif;font-size:10px;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;padding:2px 6px;background:rgba(255,255,255,0.04);border-radius:4px}
+.match-card-title{font-size:12px;font-weight:600;color:var(--text-primary);margin-bottom:4px;line-height:1.3}
+.match-card-meta{font-size:11px;color:var(--text-muted)}
+.match-status-pill{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;letter-spacing:0.5px;text-transform:uppercase;margin-top:6px}
+.match-status-pill.live{background:rgba(239,68,68,0.15);color:#ef4444;border:1px solid rgba(239,68,68,0.3);animation:pulse 2s infinite}
+.match-status-pill.upcoming{background:rgba(245,158,11,0.1);color:#f59e0b;border:1px solid rgba(245,158,11,0.25)}
+.match-status-pill.finished{background:rgba(100,116,139,0.1);color:var(--text-muted);border:1px solid rgba(100,116,139,0.2)}
+.match-embed-wrapper{margin-top:16px;background:var(--bg-secondary);border:1px solid var(--border-color);border-radius:16px;overflow:hidden;animation:fadeInUp 0.35s ease}
+.match-title-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:linear-gradient(135deg,rgba(245,158,11,0.08) 0%,rgba(239,68,68,0.08) 100%);border-bottom:1px solid var(--border-color)}
+.match-title-bar span:first-child{font-family:'Outfit',sans-serif;font-size:16px;font-weight:700;color:var(--text-primary)}
+.match-league-badge{font-size:11px;font-weight:600;color:#f59e0b;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);padding:3px 10px;border-radius:20px}
+.server-tabs{display:flex;gap:8px;padding:12px 20px;background:var(--bg-tertiary);border-bottom:1px solid var(--border-color);overflow-x:auto;scrollbar-width:none}
+.server-tabs::-webkit-scrollbar{display:none}
+.server-tab-btn{flex-shrink:0;padding:8px 18px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid var(--border-color);color:var(--text-secondary);font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s ease;display:flex;align-items:center;gap:6px}
+.server-tab-btn i{font-size:11px;color:var(--accent-secondary)}
+.server-tab-btn:hover{border-color:var(--accent-primary);color:var(--text-primary);background:rgba(99,102,241,0.08)}
+.server-tab-btn.active{background:linear-gradient(135deg,var(--accent-primary) 0%,rgba(99,102,241,0.7) 100%);border-color:var(--accent-primary);color:#fff;box-shadow:0 0 12px rgba(99,102,241,0.35)}
+.embed-container{background:#000}
+.embed-ratio{position:relative;padding-top:56.25%}
+.embed-ratio iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;display:block}
+.match-info-bar{display:flex;align-items:center;gap:20px;padding:10px 20px;font-size:12px;color:var(--text-muted);border-top:1px solid var(--border-color);background:var(--bg-tertiary);flex-wrap:wrap}
+.match-info-bar i{color:var(--accent-primary);margin-right:4px}
+.match-status-badge{font-size:10px;font-weight:700;padding:3px 10px;border-radius:10px;text-transform:uppercase;letter-spacing:0.5px;margin-left:auto}
+.match-status-badge.live{background:rgba(239,68,68,0.15);color:#ef4444;border:1px solid rgba(239,68,68,0.3)}
+.match-status-badge.upcoming{background:rgba(245,158,11,0.1);color:#f59e0b;border:1px solid rgba(245,158,11,0.25)}
+.match-status-badge.finished{background:rgba(100,116,139,0.1);color:var(--text-muted);border:1px solid rgba(100,116,139,0.2)}
+@media(max-width:1024px){.app-header{padding:0 16px}.sidebar{width:200px}}
+@media(max-width:768px){
+  .mobile-nav{display:flex}
+  .main-layout{flex-direction:column;height:auto;overflow-y:auto;padding-bottom:75px}
+  .sidebar{width:100%;height:auto;max-height:200px;border-right:none;border-bottom:1px solid var(--border-color)}
+  .sidebar-title{display:none}
+  .category-list{flex-direction:row;overflow-x:auto;padding:12px 16px;gap:8px;-ms-overflow-style:none;scrollbar-width:none}
+  .category-list::-webkit-scrollbar{display:none}
+  .category-pill{white-space:nowrap;padding:8px 14px;font-size:12px}
+  .ad-desktop-only{display:none!important}
+  .ad-mobile-only{display:flex!important}
+  .ad-top.ad-mobile-only{min-height:50px;margin-top:10px;margin-bottom:5px}
+  .content-area{overflow-y:visible}
+  .player-section{position:sticky;top:0;z-index:90;padding:12px;background-color:var(--bg-secondary);border-bottom:1px solid var(--border-color);box-shadow:0 4px 15px rgba(0,0,0,0.4)}
+  .grid-section{padding:16px}
+  .channel-grid{grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px}
+  .channel-card{padding:10px}
+  .card-logo-container{width:55px;height:55px;margin-bottom:8px}
+  .card-name{font-size:11px;height:30px}
+  .search-container{max-width:250px}
+  .github-btn span{display:none}
 }
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-primary); }
-::-webkit-scrollbar-thumb { background: var(--border-hover); border-radius: 10px; }
-::-webkit-scrollbar-thumb:hover { background: var(--accent-primary); }
-
-/* Blogger default resets */
-#header-wrapper, .navbar, #navbar-iframe { display: none !important; }
-.widget { margin: 0 !important; }
-#main-wrapper, #outer-wrapper, #wrapper { width: 100% !important; max-width: 100% !important; padding: 0 !important; margin: 0 !important; background: none !important; }
-#blog-pager, .post-footer, .post-title, .post-author, .comments, #comment-form, .comment-thread { display: none !important; }
-.post-body { margin: 0 !important; padding: 0 !important; }
-.date-header { display: none !important; }
-
-/* ==========================================
-   APP LAYOUT
-   ========================================== */
-.app-container { display: flex; flex-direction: column; height: 100vh; position: relative; }
-.app-header {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 24px; height: 70px;
-  background-color: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  border-bottom: 1px solid var(--border-color);
-  z-index: 10; box-shadow: var(--shadow-sm);
-  position: sticky; top: 0;
+@media(max-width:480px){
+  .app-header{height:60px;padding:0 12px}
+  .brand-name{font-size:16px}
+  .brand-logo-container{width:32px;height:32px}
+  .brand-logo-container i{font-size:12px}
+  .search-container{max-width:160px}
+  #searchInput{height:36px;padding:0 32px;font-size:12px}
+  .search-icon{left:10px;font-size:11px}
+  .clear-search-btn{right:10px;font-size:11px}
+  .channel-grid{grid-template-columns:repeat(3,1fr);gap:8px}
+  .player-section{padding:10px}
+  .channel-info-bar{gap:8px;margin-top:10px}
+  .current-channel-logo-container{width:40px;height:40px}
+  .current-channel-details h1{font-size:14px}
+  .favorite-toggle-btn{font-size:14px}
 }
-.brand { display: flex; align-items: center; gap: 12px; }
-.brand-logo-container {
-  display: flex; align-items: center; justify-content: center;
-  width: 38px; height: 38px; border-radius: 10px;
-  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
-  box-shadow: var(--shadow-neon);
-}
-.brand-logo-container i { font-size: 16px; color: #fff; margin-left: 2px; }
-.brand-name {
-  font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 20px; letter-spacing: 0.5px;
-  background: linear-gradient(135deg, #fff 60%, var(--text-secondary) 100%);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-}
-.accent-text {
-  background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800;
-}
-.search-container { position: relative; width: 100%; max-width: 450px; display: flex; align-items: center; }
-.search-icon { position: absolute; left: 16px; color: var(--text-muted); font-size: 14px; pointer-events: none; transition: var(--transition-fast); }
-#searchInput {
-  width: 100%; height: 42px; padding: 0 44px; border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-color);
-  color: var(--text-primary); font-family: inherit; font-size: 14px; transition: var(--transition-normal);
-}
-#searchInput:focus { outline: none; background-color: rgba(255, 255, 255, 0.06); border-color: var(--accent-primary); box-shadow: 0 0 10px rgba(99, 102, 241, 0.15); }
-.clear-search-btn { position: absolute; right: 16px; background: none; border: none; color: var(--text-muted); cursor: pointer; display: none; font-size: 14px; transition: var(--transition-fast); }
-.clear-search-btn:hover { color: var(--text-primary); }
-.header-actions { display: flex; align-items: center; }
-.github-btn {
-  display: flex; align-items: center; gap: 8px; padding: 8px 16px;
-  border-radius: 10px; background-color: var(--bg-tertiary); border: 1px solid var(--border-color);
-  color: var(--text-primary); text-decoration: none; font-size: 13px; font-weight: 500; transition: var(--transition-normal);
-}
-.github-btn:hover { background-color: var(--accent-primary); border-color: var(--accent-primary); box-shadow: var(--shadow-neon); }
-
-.main-layout { display: flex; flex: 1; overflow: hidden; height: calc(100vh - 70px); }
-.sidebar {
-  width: 250px; background-color: var(--bg-secondary); border-right: 1px solid var(--border-color);
-  display: flex; flex-direction: column; overflow-y: auto; flex-shrink: 0;
-}
-.sidebar-title { padding: 24px 20px 12px 20px; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); }
-.category-list { display: flex; flex-direction: column; gap: 4px; padding: 0 12px 24px 12px; }
-.category-pill {
-  display: flex; align-items: center; justify-content: space-between; padding: 10px 16px;
-  border-radius: 10px; background: none; border: none; color: var(--text-secondary);
-  text-align: left; font-family: inherit; font-size: 13px; font-weight: 500; cursor: pointer; transition: var(--transition-normal);
-}
-.category-pill i { margin-right: 12px; font-size: 14px; width: 16px; text-align: center; transition: var(--transition-fast); }
-.category-pill:hover { color: var(--text-primary); background-color: rgba(255, 255, 255, 0.02); }
-.category-pill.active { color: #fff; background: linear-gradient(135deg, var(--accent-primary) 0%, rgba(99, 102, 241, 0.4) 100%); font-weight: 600; box-shadow: 0 4px 12px rgba(99, 102, 241, 0.15); }
-.category-pill.active i { color: #fff; }
-.category-count { font-size: 11px; background-color: rgba(255, 255, 255, 0.05); color: var(--text-muted); padding: 2px 6px; border-radius: 20px; transition: var(--transition-fast); }
-.category-pill.active .category-count { background-color: rgba(255, 255, 255, 0.15); color: #fff; }
-
-.content-area { flex: 1; display: flex; flex-direction: column; overflow-y: auto; background-color: var(--bg-primary); }
-.player-section { background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color); padding: 24px; display: flex; flex-direction: column; align-items: center; }
-.player-wrapper {
-  position: relative; width: 100%; max-width: 900px; aspect-ratio: 16/9;
-  border-radius: 16px; overflow: hidden; background-color: #000;
-  box-shadow: var(--shadow-lg); border: 1px solid var(--border-color);
-}
-#player { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block !important; visibility: visible !important; background: #000; object-fit: contain; z-index: 1; }
-.custom-controls {
-  position: absolute; bottom: 0; left: 0; right: 0; height: 56px; padding: 0 16px;
-  display: flex; align-items: center; justify-content: space-between;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 100%);
-  opacity: 0; transition: opacity 0.3s ease; z-index: 10;
-}
-.player-wrapper:hover .custom-controls, .player-wrapper.show-controls .custom-controls { opacity: 1; }
-.controls-left, .controls-right { display: flex; align-items: center; gap: 12px; }
-.ctrl-btn { background: none; border: none; color: #fff; font-size: 18px; cursor: pointer; padding: 6px; border-radius: 6px; transition: all 0.2s ease; display: flex; align-items: center; justify-content: center; line-height: 1; }
-.ctrl-btn:hover { background: rgba(255,255,255,0.15); transform: scale(1.1); }
-.volume-group { display: flex; align-items: center; gap: 8px; }
-.volume-slider { -webkit-appearance: none; appearance: none; width: 70px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.3); cursor: pointer; outline: none; }
-.volume-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-primary); cursor: pointer; box-shadow: 0 0 6px rgba(99,102,241,0.6); }
-.live-tag { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #fff; background: rgba(239, 68, 68, 0.8); padding: 3px 10px; border-radius: 4px; }
-.live-dot { width: 6px; height: 6px; background: #fff; border-radius: 50%; animation: blink 1.2s infinite; }
-.player-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.85); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px; z-index: 5; color: #fff; }
-.player-overlay span { font-size: 14px; font-weight: 500; letter-spacing: 0.5px; }
-.spinner { width: 44px; height: 44px; border: 3px solid rgba(255, 255, 255, 0.1); border-radius: 50%; border-top-color: var(--accent-primary); border-right-color: var(--accent-secondary); animation: spin 1s infinite linear; }
-@keyframes spin { to { transform: rotate(360deg); } }
-.error-overlay { background-color: rgba(10, 11, 16, 0.95); }
-.error-icon { font-size: 44px; color: var(--accent-danger); animation: pulse 2s infinite; }
-.error-msg { color: var(--text-secondary); text-align: center; max-width: 80%; }
-@keyframes pulse { 0% { transform: scale(1); opacity: 0.8; } 50% { transform: scale(1.08); opacity: 1; } 100% { transform: scale(1); opacity: 0.8; } }
-.channel-info-bar { display: flex; align-items: center; gap: 16px; width: 100%; max-width: 900px; margin-top: 16px; padding: 0 8px; }
-.current-channel-logo-container { width: 50px; height: 50px; border-radius: 12px; overflow: hidden; background-color: var(--bg-tertiary); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.current-channel-logo-container img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
-.channel-fallback { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 14px; color: var(--accent-primary); background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%); }
-.current-channel-details { flex: 1; }
-.channel-name-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; width: 100%; }
-.current-channel-details h1 { font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; color: var(--text-primary); }
-.favorite-toggle-btn { background: none; border: none; color: var(--text-muted); font-size: 18px; cursor: pointer; transition: var(--transition-fast); }
-.favorite-toggle-btn:hover { color: var(--accent-warning); transform: scale(1.1); }
-.favorite-toggle-btn.is-favorite { color: var(--accent-warning); }
-.channel-category-badge { display: inline-block; font-size: 11px; color: var(--accent-primary); background-color: rgba(99, 102, 241, 0.1); padding: 3px 8px; border-radius: 6px; font-weight: 600; text-transform: uppercase; margin-top: 4px; }
-
-/* Ads */
-.ad-container { display: flex; justify-content: center; align-items: center; background-color: rgba(255, 255, 255, 0.01); border: 1px dashed var(--border-color); border-radius: 8px; overflow: hidden; transition: var(--transition-normal); margin: 0 auto; color: var(--text-muted); font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; position: relative; }
-.ad-container:empty { display: none !important; }
-.ad-desktop-only { display: flex !important; }
-.ad-mobile-only { display: none !important; }
-.ad-top { width: 100%; max-width: 900px; min-height: 90px; margin-top: 16px; margin-bottom: 8px; }
-.ad-player-bottom { width: 100%; max-width: 900px; min-height: 90px; margin-top: 16px; }
-.ad-sidebar { width: calc(100% - 24px); margin: 16px 12px; min-height: 250px; }
-.ad-sidebar-tall { width: 160px; min-height: 600px; margin: 16px auto; }
-.ad-sidebar-half { width: 160px; min-height: 300px; margin: 16px auto; }
-.ad-below-player { width: 100%; max-width: 468px; min-height: 60px; margin-top: 16px; }
-.alt-server-btn { display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 10px; background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%); border: 1px solid var(--border-hover); color: var(--text-primary); font-family: inherit; font-size: 12px; font-weight: 600; cursor: pointer; transition: var(--transition-normal); margin-left: auto; box-shadow: 0 0 10px rgba(6, 182, 212, 0.1); }
-.alt-server-btn i { color: var(--accent-secondary); animation: bounce-horizontal 2s infinite ease-in-out; }
-@keyframes bounce-horizontal { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); text-shadow: 0 0 8px rgba(6, 182, 212, 0.6); } }
-.alt-server-btn:hover { background: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent-primary) 100%); border-color: var(--accent-primary); box-shadow: 0 0 15px rgba(6, 182, 212, 0.4); transform: translateY(-2px); }
-
-/* Grid */
-.grid-section { padding: 24px; flex: 1; }
-.section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
-.section-header h2 { font-family: 'Outfit', sans-serif; font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }
-.channel-count-badge { font-size: 12px; color: var(--text-secondary); background-color: var(--bg-secondary); padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border-color); }
-.channel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 16px; }
-.channel-card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; align-items: center; text-align: center; cursor: pointer; position: relative; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); user-select: none; }
-.channel-card:hover { transform: translateY(-4px); border-color: var(--accent-primary); background-color: var(--bg-tertiary); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); }
-.channel-card.active { border-color: var(--accent-primary); background-color: rgba(99, 102, 241, 0.05); box-shadow: var(--shadow-neon); }
-.card-logo-container { width: 70px; height: 70px; border-radius: 10px; overflow: hidden; background-color: var(--bg-primary); display: flex; align-items: center; justify-content: center; margin-bottom: 12px; position: relative; border: 1px solid var(--border-color); transition: var(--transition-fast); }
-.card-logo-container img { width: 100%; height: 100%; object-fit: contain; padding: 6px; }
-.card-fallback { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 16px; }
-.card-name { font-size: 12px; font-weight: 600; color: var(--text-primary); line-height: 1.4; height: 34px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.live-badge { position: absolute; top: 8px; right: 8px; background-color: var(--accent-danger); color: #fff; font-size: 9px; font-weight: 700; text-transform: uppercase; padding: 2px 6px; border-radius: 4px; letter-spacing: 0.5px; box-shadow: 0 0 8px rgba(239, 68, 68, 0.5); animation: blink 1.5s infinite; }
-@keyframes blink { 0% { opacity: 0.8; } 50% { opacity: 0.4; } 100% { opacity: 0.8; } }
-
-/* App Loader */
-.app-loader-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--bg-primary); display: flex; align-items: center; justify-content: center; z-index: 100; transition: opacity 0.5s ease, visibility 0.5s ease; }
-.app-loader-overlay.hidden { opacity: 0; visibility: hidden; }
-.loader-content { display: flex; flex-direction: column; align-items: center; gap: 24px; }
-.logo-loading { animation: bounce 2s infinite ease-in-out; }
-.logo-loading .brand-logo-container { width: 55px; height: 55px; border-radius: 14px; }
-.logo-loading .brand-logo-container i { font-size: 24px; margin-left: 3px; }
-@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
-.loading-bar-container { width: 180px; height: 4px; background-color: rgba(255, 255, 255, 0.05); border-radius: 20px; overflow: hidden; position: relative; }
-.loading-bar { width: 60px; height: 100%; background: linear-gradient(90deg, var(--accent-primary) 0%, var(--accent-secondary) 100%); border-radius: 20px; position: absolute; animation: slide 1.5s infinite ease-in-out; }
-@keyframes slide { 0% { left: -60px; } 100% { left: 180px; } }
-.loading-status { font-size: 13px; color: var(--text-secondary); font-weight: 500; }
-.hidden { display: none !important; }
-
-/* Mobile Nav */
-.mobile-nav { display: none; position: fixed; bottom: 0; left: 0; width: 100%; height: 65px; background-color: rgba(18, 20, 32, 0.95); backdrop-filter: var(--glass-blur); border-top: 1px solid var(--border-color); z-index: 99; justify-content: space-around; align-items: center; box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4); }
-.nav-item { background: none; border: none; color: var(--text-secondary); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 11px; font-weight: 500; font-family: inherit; cursor: pointer; flex: 1; height: 100%; transition: var(--transition-fast); }
-.nav-item i { font-size: 18px; transition: var(--transition-fast); }
-.nav-item.active { color: var(--accent-primary); background: radial-gradient(circle at bottom, rgba(99, 102, 241, 0.05) 0%, transparent 60%); }
-.nav-item.active i { transform: translateY(-2px); text-shadow: 0 0 10px rgba(99, 102, 241, 0.5); color: var(--accent-primary); }
-
-/* Ad Overlay Modal */
-.ad-overlay-modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(6, 7, 10, 0.95); backdrop-filter: blur(15px); display: flex; align-items: center; justify-content: center; z-index: 200; padding: 20px; animation: fadeIn var(--transition-normal); }
-.ad-overlay-content { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 20px; max-width: 420px; width: 100%; padding: 30px; text-align: center; box-shadow: var(--shadow-lg), 0 0 30px rgba(99, 102, 241, 0.1); display: flex; flex-direction: column; align-items: center; gap: 16px; animation: scaleUp var(--transition-normal); }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes scaleUp { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-.overlay-play-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; box-shadow: var(--shadow-neon); animation: pulse-ring 2s infinite; margin-bottom: 8px; }
-.overlay-play-icon i { margin-left: 4px; }
-@keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.4); } 70% { box-shadow: 0 0 0 15px rgba(99, 102, 241, 0); } 100% { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0); } }
-.ad-overlay-content h3 { font-family: 'Outfit', sans-serif; font-size: 20px; font-weight: 700; color: var(--text-primary); }
-.ad-overlay-content p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
-.ad-overlay-btn { width: 100%; height: 48px; border-radius: 12px; border: none; background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%); color: #fff; font-family: inherit; font-size: 14px; font-weight: 700; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: var(--transition-normal); box-shadow: var(--shadow-neon); }
-.ad-overlay-btn:hover { filter: brightness(1.1); transform: translateY(-2px); box-shadow: 0 0 20px rgba(99, 102, 241, 0.6); }
-
-/* SEO Footer */
-.seo-footer { background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); padding: 40px 24px; color: var(--text-secondary); font-size: 13px; line-height: 1.6; margin-top: 40px; }
-.seo-container { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px; }
-.seo-footer h2 { font-family: 'Outfit', sans-serif; color: var(--text-primary); font-size: 20px; font-weight: 700; margin-bottom: 8px; }
-.seo-footer h3 { font-family: 'Outfit', sans-serif; color: var(--text-primary); font-size: 15px; font-weight: 600; margin-bottom: 8px; }
-.seo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 10px; }
-.seo-card { background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; }
-.seo-card ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-.seo-card ul li strong { color: var(--accent-secondary); }
-.seo-tag-cloud { text-align: center; font-size: 11px; color: var(--text-muted); border-top: 1px dashed var(--border-color); padding-top: 16px; margin-top: 12px; }
-.seo-tag-cloud span { display: inline-block; margin: 4px; background-color: rgba(255, 255, 255, 0.02); padding: 2px 8px; border-radius: 4px; }
-.noscript-content { padding: 16px; background-color: rgba(99, 102, 241, 0.05); border: 1px solid rgba(99, 102, 241, 0.15); border-radius: 10px; margin: 12px 0; color: var(--text-primary); }
-
-/* FIFA Section */
-.fifa-match-section { padding: 20px 24px 0; animation: fadeInUp 0.4s ease; }
-@keyframes fadeInUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
-.fifa-section-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
-.fifa-badge { display: flex; align-items: center; gap: 8px; font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 700; background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: 0.5px; }
-.fifa-live-badge { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #ef4444; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.25); padding: 4px 10px; border-radius: 20px; }
-.fifa-live-badge .live-dot { width: 6px; height: 6px; background: #ef4444; border-radius: 50%; animation: blink 1.2s infinite; }
-.match-cards-row { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 12px; scrollbar-width: thin; scrollbar-color: var(--border-hover) transparent; }
-.match-cards-row::-webkit-scrollbar { height: 4px; }
-.match-card { flex-shrink: 0; min-width: 200px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 14px 16px; cursor: pointer; transition: all 0.25s ease; position: relative; overflow: hidden; }
-.match-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, #f59e0b, #ef4444); opacity: 0; transition: opacity 0.25s; }
-.match-card:hover { border-color: var(--accent-primary); transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
-.match-card:hover::before, .match-card.active::before { opacity: 1; }
-.match-card.active { border-color: #f59e0b; background: rgba(245, 158, 11, 0.07); box-shadow: 0 0 20px rgba(245, 158, 11, 0.15); }
-.match-card-teams { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-.match-flag { font-size: 22px; line-height: 1; }
-.match-vs { font-family: 'Outfit', sans-serif; font-size: 10px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; padding: 2px 6px; background: rgba(255,255,255,0.04); border-radius: 4px; }
-.match-card-title { font-size: 12px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; line-height: 1.3; }
-.match-card-meta { font-size: 11px; color: var(--text-muted); }
-.match-status-pill { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 10px; letter-spacing: 0.5px; text-transform: uppercase; margin-top: 6px; }
-.match-status-pill.live { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); animation: pulse 2s infinite; }
-.match-status-pill.upcoming { background: rgba(245,158,11,0.1); color: #f59e0b; border: 1px solid rgba(245,158,11,0.25); }
-.match-status-pill.finished { background: rgba(100,116,139,0.1); color: var(--text-muted); border: 1px solid rgba(100,116,139,0.2); }
-.match-embed-wrapper { margin-top: 16px; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; overflow: hidden; animation: fadeInUp 0.35s ease; }
-.match-title-bar { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: linear-gradient(135deg, rgba(245,158,11,0.08) 0%, rgba(239,68,68,0.08) 100%); border-bottom: 1px solid var(--border-color); }
-.match-title-bar span:first-child { font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 700; color: var(--text-primary); }
-.match-league-badge { font-size: 11px; font-weight: 600; color: #f59e0b; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.2); padding: 3px 10px; border-radius: 20px; }
-.server-tabs { display: flex; gap: 8px; padding: 12px 20px; background: var(--bg-tertiary); border-bottom: 1px solid var(--border-color); overflow-x: auto; scrollbar-width: none; }
-.server-tabs::-webkit-scrollbar { display: none; }
-.server-tab-btn { flex-shrink: 0; padding: 8px 18px; border-radius: 8px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-color); color: var(--text-secondary); font-family: inherit; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.2s ease; display: flex; align-items: center; gap: 6px; }
-.server-tab-btn i { font-size: 11px; color: var(--accent-secondary); }
-.server-tab-btn:hover { border-color: var(--accent-primary); color: var(--text-primary); background: rgba(99,102,241,0.08); }
-.server-tab-btn.active { background: linear-gradient(135deg, var(--accent-primary) 0%, rgba(99,102,241,0.7) 100%); border-color: var(--accent-primary); color: #fff; box-shadow: 0 0 12px rgba(99,102,241,0.35); }
-.embed-container { background: #000; }
-.embed-ratio { position: relative; padding-top: 56.25%; }
-.embed-ratio iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; display: block; }
-.match-info-bar { display: flex; align-items: center; gap: 20px; padding: 10px 20px; font-size: 12px; color: var(--text-muted); border-top: 1px solid var(--border-color); background: var(--bg-tertiary); flex-wrap: wrap; }
-.match-info-bar i { color: var(--accent-primary); margin-right: 4px; }
-.match-status-badge { font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.5px; margin-left: auto; }
-.match-status-badge.live { background: rgba(239,68,68,0.15); color: #ef4444; border: 1px solid rgba(239,68,68,0.3); }
-.match-status-badge.upcoming { background: rgba(245,158,11,0.1); color: #f59e0b; border: 1px solid rgba(245,158,11,0.25); }
-.match-status-badge.finished { background: rgba(100,116,139,0.1); color: var(--text-muted); border: 1px solid rgba(100,116,139,0.2); }
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .app-header { padding: 0 16px; }
-  .sidebar { width: 200px; }
-}
-@media (max-width: 768px) {
-  .mobile-nav { display: flex; }
-  .main-layout { flex-direction: column; height: auto; overflow-y: auto; padding-bottom: 75px; }
-  .sidebar { width: 100%; height: auto; max-height: 200px; border-right: none; border-bottom: 1px solid var(--border-color); }
-  .sidebar-title { display: none; }
-  .category-list { flex-direction: row; overflow-x: auto; padding: 12px 16px; gap: 8px; -ms-overflow-style: none; scrollbar-width: none; }
-  .category-list::-webkit-scrollbar { display: none; }
-  .category-pill { white-space: nowrap; padding: 8px 14px; font-size: 12px; }
-  .category-pill i { margin-right: 6px; }
-  .ad-desktop-only { display: none !important; }
-  .ad-mobile-only { display: flex !important; }
-  .ad-top.ad-mobile-only { min-height: 50px; margin-top: 10px; margin-bottom: 5px; }
-  .content-area { overflow-y: visible; }
-  .player-section { position: sticky; top: 0; z-index: 90; padding: 12px; background-color: var(--bg-secondary); border-bottom: 1px solid var(--border-color); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); }
-  .grid-section { padding: 16px; }
-  .channel-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 12px; }
-  .channel-card { padding: 10px; }
-  .card-logo-container { width: 55px; height: 55px; margin-bottom: 8px; }
-  .card-name { font-size: 11px; height: 30px; }
-  .search-container { max-width: 250px; }
-  .github-btn span { display: none; }
-}
-@media (max-width: 480px) {
-  .app-header { height: 60px; padding: 0 12px; }
-  .brand-name { font-size: 16px; }
-  .brand-logo-container { width: 32px; height: 32px; }
-  .brand-logo-container i { font-size: 12px; }
-  .search-container { max-width: 160px; }
-  #searchInput { height: 36px; padding: 0 32px; font-size: 12px; }
-  .search-icon { left: 10px; font-size: 11px; }
-  .clear-search-btn { right: 10px; font-size: 11px; }
-  .channel-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .player-section { padding: 10px; }
-  .channel-info-bar { gap: 8px; margin-top: 10px; }
-  .current-channel-logo-container { width: 40px; height: 40px; }
-  .current-channel-details h1 { font-size: 14px; }
-  .favorite-toggle-btn { font-size: 14px; }
-}
-  </style>
+  ]]></b:skin>
 
 </head>
 
@@ -471,139 +345,95 @@ body {
   </b:widget>
 </b:section>
 
-  <!-- ✅ ALONE TV App -->
   <div class='app-container' id='alonetvApp'>
 
-    <!-- Header -->
     <header class='app-header'>
       <div class='brand'>
-        <div class='brand-logo-container'>
-          <i class='fa-solid fa-play'></i>
-        </div>
+        <div class='brand-logo-container'><i class='fa-solid fa-play'/></div>
         <span class='brand-name'>ALONE <span class='accent-text'>TV</span></span>
       </div>
       <div class='search-container'>
-        <i class='fa-solid fa-magnifying-glass search-icon'></i>
+        <i class='fa-solid fa-magnifying-glass search-icon'/>
         <input id='searchInput' placeholder='Search your favorite TV channel...' type='text'/>
-        <button class='clear-search-btn' id='clearSearchBtn'><i class='fa-solid fa-xmark'></i></button>
+        <button class='clear-search-btn' id='clearSearchBtn'><i class='fa-solid fa-xmark'/></button>
       </div>
       <div class='header-actions'>
         <a class='github-btn' href='https://github.com/tawhid2005/Alone-TV' rel='noopener' target='_blank'>
-          <i class='fa-brands fa-github'></i> <span>GitHub</span>
+          <i class='fa-brands fa-github'/> <span>GitHub</span>
         </a>
       </div>
     </header>
 
-    <!-- ✅ Top Banner Ad — Desktop 728x90 -->
-    <div class='ad-container ad-top ad-desktop-only' id='topAdContainerDesktop'>
+    <div class='ad-container ad-top ad-desktop-only' id='topAdDesktop'>
       <script type='text/javascript'>
-        atOptions = {
-          &#39;key&#39; : &#39;bb35470de6b043368996d6d40e6a362f&#39;,
-          &#39;format&#39; : &#39;iframe&#39;,
-          &#39;height&#39; : 90,
-          &#39;width&#39; : 728,
-          &#39;params&#39; : {}
-        };
+      //<![CDATA[
+        atOptions = {'key':'bb35470de6b043368996d6d40e6a362f','format':'iframe','height':90,'width':728,'params':{}};
+      //]]>
       </script>
-      <script src='https://www.highperformanceformat.com/bb35470de6b043368996d6d40e6a362f/invoke.js' type='text/javascript'></script>
+      <script src='https://www.highperformanceformat.com/bb35470de6b043368996d6d40e6a362f/invoke.js' type='text/javascript'/>
     </div>
 
-    <!-- ✅ Top Banner Ad — Mobile 320x50 -->
-    <div class='ad-container ad-top ad-mobile-only' id='topAdContainerMobile'>
+    <div class='ad-container ad-top ad-mobile-only' id='topAdMobile'>
       <script type='text/javascript'>
-        atOptions = {
-          &#39;key&#39; : &#39;0eb0a4c7c0880c284f6f75819135a509&#39;,
-          &#39;format&#39; : &#39;iframe&#39;,
-          &#39;height&#39; : 50,
-          &#39;width&#39; : 320,
-          &#39;params&#39; : {}
-        };
+      //<![CDATA[
+        atOptions = {'key':'0eb0a4c7c0880c284f6f75819135a509','format':'iframe','height':50,'width':320,'params':{}};
+      //]]>
       </script>
-      <script src='https://www.highperformanceformat.com/0eb0a4c7c0880c284f6f75819135a509/invoke.js' type='text/javascript'></script>
+      <script src='https://www.highperformanceformat.com/0eb0a4c7c0880c284f6f75819135a509/invoke.js' type='text/javascript'/>
     </div>
 
     <div class='main-layout'>
-      <!-- Sidebar -->
       <aside class='sidebar'>
         <div class='sidebar-title'>Categories</div>
-        <div class='category-list' id='categoryList'></div>
+        <div class='category-list' id='categoryList'/>
 
-        <!-- ✅ Sidebar Ad 300x250 -->
-        <div class='ad-container ad-sidebar' id='sidebarAdContainer'>
+        <div class='ad-container ad-sidebar' id='sidebarAd'>
           <script type='text/javascript'>
-            atOptions = {
-              &#39;key&#39; : &#39;1cab77e98287e4c8ee757e4d8c6f57a4&#39;,
-              &#39;format&#39; : &#39;iframe&#39;,
-              &#39;height&#39; : 250,
-              &#39;width&#39; : 300,
-              &#39;params&#39; : {}
-            };
+          //<![CDATA[
+            atOptions = {'key':'1cab77e98287e4c8ee757e4d8c6f57a4','format':'iframe','height':250,'width':300,'params':{}};
+          //]]>
           </script>
-          <script src='https://www.highperformanceformat.com/1cab77e98287e4c8ee757e4d8c6f57a4/invoke.js' type='text/javascript'></script>
+          <script src='https://www.highperformanceformat.com/1cab77e98287e4c8ee757e4d8c6f57a4/invoke.js' type='text/javascript'/>
         </div>
 
-        <!-- ✅ Sidebar Ad 160x600 -->
-        <div class='ad-container ad-sidebar-tall ad-desktop-only' id='sidebarTallAdContainer'>
+        <div class='ad-container ad-sidebar-tall ad-desktop-only' id='sidebarTallAd'>
           <script type='text/javascript'>
-            atOptions = {
-              &#39;key&#39; : &#39;71d75362f9bccebcbd277251fbd446d3&#39;,
-              &#39;format&#39; : &#39;iframe&#39;,
-              &#39;height&#39; : 600,
-              &#39;width&#39; : 160,
-              &#39;params&#39; : {}
-            };
+          //<![CDATA[
+            atOptions = {'key':'71d75362f9bccebcbd277251fbd446d3','format':'iframe','height':600,'width':160,'params':{}};
+          //]]>
           </script>
-          <script src='https://www.highperformanceformat.com/71d75362f9bccebcbd277251fbd446d3/invoke.js' type='text/javascript'></script>
+          <script src='https://www.highperformanceformat.com/71d75362f9bccebcbd277251fbd446d3/invoke.js' type='text/javascript'/>
         </div>
 
-        <!-- ✅ Sidebar Ad 160x300 -->
-        <div class='ad-container ad-sidebar-half ad-desktop-only' id='sidebarHalfAdContainer'>
+        <div class='ad-container ad-sidebar-half ad-desktop-only' id='sidebarHalfAd'>
           <script type='text/javascript'>
-            atOptions = {
-              &#39;key&#39; : &#39;ef49e66993b669ea831a8acc6d17fb46&#39;,
-              &#39;format&#39; : &#39;iframe&#39;,
-              &#39;height&#39; : 300,
-              &#39;width&#39; : 160,
-              &#39;params&#39; : {}
-            };
+          //<![CDATA[
+            atOptions = {'key':'ef49e66993b669ea831a8acc6d17fb46','format':'iframe','height':300,'width':160,'params':{}};
+          //]]>
           </script>
-          <script src='https://www.highperformanceformat.com/ef49e66993b669ea831a8acc6d17fb46/invoke.js' type='text/javascript'></script>
+          <script src='https://www.highperformanceformat.com/ef49e66993b669ea831a8acc6d17fb46/invoke.js' type='text/javascript'/>
         </div>
       </aside>
 
-      <!-- Main Content -->
       <main class='content-area'>
-        <!-- Player Section -->
         <section class='player-section'>
           <div class='player-wrapper'>
-            <video id='player' playsinline=''></video>
+            <video id='player' playsinline=''/>
             <div class='custom-controls' id='customControls'>
               <div class='controls-left'>
-                <button class='ctrl-btn' id='playPauseBtn' title='Play/Pause'>
-                  <i class='fa-solid fa-play' id='playPauseIcon'></i>
-                </button>
+                <button class='ctrl-btn' id='playPauseBtn' title='Play/Pause'><i class='fa-solid fa-play' id='playPauseIcon'/></button>
                 <div class='volume-group'>
-                  <button class='ctrl-btn' id='muteBtn' title='Mute/Unmute'>
-                    <i class='fa-solid fa-volume-high' id='muteIcon'></i>
-                  </button>
+                  <button class='ctrl-btn' id='muteBtn' title='Mute/Unmute'><i class='fa-solid fa-volume-high' id='muteIcon'/></button>
                   <input class='volume-slider' id='volumeSlider' max='1' min='0' step='0.05' type='range' value='1'/>
                 </div>
-                <span class='live-tag'><span class='live-dot'></span> LIVE</span>
+                <span class='live-tag'><span class='live-dot'/> LIVE</span>
               </div>
               <div class='controls-right'>
-                <button class='ctrl-btn' id='fullscreenBtn' title='Fullscreen'>
-                  <i class='fa-solid fa-expand' id='fullscreenIcon'></i>
-                </button>
+                <button class='ctrl-btn' id='fullscreenBtn' title='Fullscreen'><i class='fa-solid fa-expand' id='fullscreenIcon'/></button>
               </div>
             </div>
-            <div class='player-overlay hidden' id='playerLoader'>
-              <div class='spinner'></div>
-              <span>Connecting stream...</span>
-            </div>
-            <div class='error-overlay player-overlay hidden' id='playerError'>
-              <i class='error-icon fa-solid fa-triangle-exclamation'></i>
-              <span class='error-msg'>Stream is currently offline. Trying another link...</span>
-            </div>
+            <div class='player-overlay hidden' id='playerLoader'><div class='spinner'/><span>Connecting stream...</span></div>
+            <div class='error-overlay player-overlay hidden' id='playerError'><i class='error-icon fa-solid fa-triangle-exclamation'/><span class='error-msg'>Stream is currently offline.</span></div>
           </div>
 
           <div class='channel-info-bar'>
@@ -614,804 +444,168 @@ body {
             <div class='current-channel-details'>
               <div class='channel-name-row'>
                 <h1 id='currentChannelName'>Select a channel to play</h1>
-                <button class='favorite-toggle-btn' id='favoriteBtn' title='Add to Favorites'>
-                  <i class='fa-regular fa-star'></i>
-                </button>
-                <button class='alt-server-btn' id='altServerBtn' title='Alternative Server (HD)'>
-                  <i class='fa-solid fa-bolt'></i> Alternative Server (HD)
-                </button>
+                <button class='favorite-toggle-btn' id='favoriteBtn' title='Add to Favorites'><i class='fa-regular fa-star'/></button>
+                <button class='alt-server-btn' id='altServerBtn'><i class='fa-solid fa-bolt'/> Alternative Server (HD)</button>
               </div>
               <p class='channel-category-badge' id='currentChannelCategory'>General</p>
             </div>
           </div>
 
-          <!-- ✅ Banner 468x60 Below Player -->
-          <div class='ad-below-player ad-container ad-desktop-only' id='belowPlayerAdContainer'>
+          <div class='ad-below-player ad-container ad-desktop-only' id='belowPlayerAd'>
             <script type='text/javascript'>
-              atOptions = {
-                &#39;key&#39; : &#39;3653bbcab72aab4364fa4ba5fb7920fb&#39;,
-                &#39;format&#39; : &#39;iframe&#39;,
-                &#39;height&#39; : 60,
-                &#39;width&#39; : 468,
-                &#39;params&#39; : {}
-              };
+            //<![CDATA[
+              atOptions = {'key':'3653bbcab72aab4364fa4ba5fb7920fb','format':'iframe','height':60,'width':468,'params':{}};
+            //]]>
             </script>
-            <script src='https://www.highperformanceformat.com/3653bbcab72aab4364fa4ba5fb7920fb/invoke.js' type='text/javascript'></script>
+            <script src='https://www.highperformanceformat.com/3653bbcab72aab4364fa4ba5fb7920fb/invoke.js' type='text/javascript'/>
           </div>
         </section>
 
-        <!-- ✅ FIFA Match Section -->
         <section class='fifa-match-section' id='fifaMatchSection' style='display:none;'>
           <div class='fifa-section-header'>
-            <span class='fifa-badge'><i class='fa-solid fa-futbol'></i> FIFA World Cup 2026</span>
-            <span class='fifa-live-badge'><span class='live-dot'></span> LIVE MATCHES</span>
+            <span class='fifa-badge'><i class='fa-solid fa-futbol'/> FIFA World Cup 2026</span>
+            <span class='fifa-live-badge'><span class='live-dot'/> LIVE MATCHES</span>
           </div>
-          <div class='match-cards-row' id='matchCards'></div>
+          <div class='match-cards-row' id='matchCards'/>
           <div class='match-embed-wrapper' id='matchEmbedWrapper' style='display:none;'>
             <div class='match-title-bar' id='matchTitleBar'>
               <span id='matchTeams'>Select a match</span>
               <span class='match-league-badge' id='matchLeague'>FIFA World Cup 2026</span>
             </div>
-            <div class='server-tabs' id='serverTabs'></div>
+            <div class='server-tabs' id='serverTabs'/>
             <div class='embed-container'>
               <div class='embed-ratio'>
-                <iframe allowfullscreen='' allowtransparency='' frameborder='0' id='matchIframe' scrolling='no' src='' style='border-radius: 8px;'></iframe>
+                <iframe allowfullscreen='' frameborder='0' id='matchIframe' scrolling='no' src=''/>
               </div>
             </div>
             <div class='match-info-bar' id='matchInfoBar'>
-              <span><i class='fa-regular fa-calendar'></i> <span id='matchDate'>-</span></span>
-              <span><i class='fa-regular fa-clock'></i> <span id='matchTime'>-</span></span>
+              <span><i class='fa-regular fa-calendar'/> <span id='matchDate'>-</span></span>
+              <span><i class='fa-regular fa-clock'/> <span id='matchTime'>-</span></span>
               <span class='match-status-badge' id='matchStatus'>-</span>
             </div>
           </div>
         </section>
 
-        <!-- Grid Section -->
         <section class='grid-section'>
           <div class='section-header'>
             <h2 id='gridTitle'>All Channels</h2>
             <span class='channel-count-badge' id='channelCount'>0 channels</span>
           </div>
-          <div class='channel-grid' id='channelGrid'></div>
+          <div class='channel-grid' id='channelGrid'/>
         </section>
 
-        <!-- ✅ Native Banner Ad (Adsterra) -->
         <div class='ad-container ad-player-bottom' id='playerAdContainer'>
-          <script async='async' data-cfasync='false' src='https://pl29736920.effectivecpmnetwork.com/24f89261ffb3e177d8d591a36acd1829/invoke.js'></script>
-          <div id='container-24f89261ffb3e177d8d591a36acd1829' style='width: 100%;'></div>
+          <script async='async' data-cfasync='false' src='https://pl29736920.effectivecpmnetwork.com/24f89261ffb3e177d8d591a36acd1829/invoke.js'/>
+          <div id='container-24f89261ffb3e177d8d591a36acd1829' style='width:100%;'/>
         </div>
 
-        <!-- SEO Footer -->
         <footer class='seo-footer'>
           <div class='seo-container'>
             <h2>Watch FIFA World Cup 2026 Live Streaming Online</h2>
-            <p>Welcome to <strong>ALONE TV</strong>, your premium destination for high-definition live sports and TV streaming. Stream the highly anticipated <strong>FIFA World Cup 2026</strong>, live football fixtures, international cups, and domestic leagues right from your browser. We host multiple backup servers so you never miss a single minute of the action.</p>
+            <p>Welcome to <strong>ALONE TV</strong>, your premium destination for HD live sports and TV streaming. Stream the <strong>FIFA World Cup 2026</strong>, live football fixtures, international cups, and domestic leagues right from your browser.</p>
             <div class='seo-grid'>
               <div class='seo-card'>
                 <h3>Popular Live Match Searches</h3>
                 <ul>
-                  <li><strong>Iran vs New Zealand Live Stream</strong>: Catch full HD live streaming, match statistics, and live commentary.</li>
-                  <li><strong>Spain vs Cape Verde Live</strong>: Stream Spain vs Cabo Verde live free online in premium high definition.</li>
-                  <li><strong>Belgium vs Egypt Live</strong>: Direct access to stream links and sports TV channels covering the matches.</li>
+                  <li><strong>Iran vs New Zealand Live Stream</strong>: Full HD live streaming with match statistics.</li>
+                  <li><strong>Spain vs Cape Verde Live</strong>: Stream free online in premium high definition.</li>
+                  <li><strong>Belgium vs Egypt Live</strong>: Direct access to stream links and sports TV channels.</li>
                 </ul>
               </div>
               <div class='seo-card'>
-                <h3>Common Queries &amp; Answers</h3>
+                <h3>Common Queries</h3>
                 <ul>
-                  <li><strong>Where can I watch the FIFA World Cup 2026 live?</strong> ALONE TV provides free, high-speed HLS streaming links for all matches.</li>
-                  <li><strong>Is sign-up required?</strong> No, you can start streaming any channel instantly with a single click.</li>
-                  <li><strong>What categories are available?</strong> FIFA streams, Sports, Bangla, Kids, News, Movies, Hindi, and Entertainment.</li>
+                  <li><strong>Where can I watch FIFA World Cup 2026?</strong> ALONE TV provides free HLS streaming for all matches.</li>
+                  <li><strong>Is sign-up required?</strong> No, stream any channel with a single click.</li>
+                  <li><strong>What categories?</strong> FIFA, Sports, Bangla, Kids, News, Movies, Hindi, Entertainment.</li>
                 </ul>
               </div>
             </div>
-            <noscript>
-              <div class='noscript-content'>
-                <h3>📺 Live Streams Fallback Navigation:</h3>
-                <p>Please enable JavaScript to load channels. Popular streams include:</p>
-                <ul>
-                  <li><strong>FIFA1 Live</strong> - FIFA World Cup 2026 Live Stream</li>
-                  <li><strong>Iran vs New Zealand Live Stream</strong></li>
-                  <li><strong>Spain vs Cape Verde Live Stream</strong></li>
-                  <li>T Sports, GTV Live, Star Sports, Sony Sports, Bangla TV Channels</li>
-                </ul>
-              </div>
-            </noscript>
             <div class='seo-tag-cloud'>
-              <span>fifa world cup live</span> • <span>world cup live</span> • <span>live world cup</span> • <span>fifa world cup 2026 live</span> • <span>live fifa world cup 2026</span> • <span>iran vs new zealand live</span> • <span>spain vs cape verde live</span> • <span>belgium vs egypt live</span> • <span>t sports live</span> • <span>bangla tv live</span> • <span>gtv live</span>
+              <span>fifa world cup live</span> * <span>world cup live</span> * <span>fifa world cup 2026 live</span> * <span>iran vs new zealand live</span> * <span>spain vs cape verde live</span> * <span>t sports live</span> * <span>bangla tv live</span> * <span>gtv live</span>
             </div>
           </div>
         </footer>
       </main>
     </div>
 
-    <!-- Mobile Bottom Navigation -->
     <nav class='mobile-nav' id='mobileNav'>
-      <button class='nav-item active' data-nav='All' onclick='selectNav(&quot;All&quot;, this)'>
-        <i class='fa-solid fa-house'></i><span>Home</span>
-      </button>
-      <button class='nav-item' data-nav='FIFA26' onclick='selectNav(&quot;FIFA26&quot;, this)'>
-        <i class='fa-solid fa-circle-play'></i><span>FIFA</span>
-      </button>
-      <button class='nav-item' data-nav='Favorites' onclick='selectNav(&quot;Favorites&quot;, this)'>
-        <i class='fa-solid fa-star'></i><span>Favorites</span>
-      </button>
-      <button class='nav-item' data-nav='Search' onclick='selectNav(&quot;Search&quot;, this)'>
-        <i class='fa-solid fa-magnifying-glass'></i><span>Search</span>
-      </button>
+      <button class='nav-item active' data-nav='All' onclick='selectNav(&quot;All&quot;,this)'><i class='fa-solid fa-house'/><span>Home</span></button>
+      <button class='nav-item' data-nav='FIFA26' onclick='selectNav(&quot;FIFA26&quot;,this)'><i class='fa-solid fa-circle-play'/><span>FIFA</span></button>
+      <button class='nav-item' data-nav='Favorites' onclick='selectNav(&quot;Favorites&quot;,this)'><i class='fa-solid fa-star'/><span>Favorites</span></button>
+      <button class='nav-item' data-nav='Search' onclick='selectNav(&quot;Search&quot;,this)'><i class='fa-solid fa-magnifying-glass'/><span>Search</span></button>
     </nav>
 
-    <!-- Ad Overlay Modal -->
     <div class='ad-overlay-modal hidden' id='adOverlay'>
       <div class='ad-overlay-content'>
-        <div class='overlay-play-icon'><i class='fa-solid fa-play'></i></div>
+        <div class='overlay-play-icon'><i class='fa-solid fa-play'/></div>
         <h3>Fast Stream Server Ready</h3>
-        <p>Establish a secure connection to our premium sports and TV streaming servers to watch in high definition.</p>
-        <button class='ad-overlay-btn' id='adOverlayBtn'>
-          <i class='fa-solid fa-circle-play'></i> Watch Live Stream
-        </button>
+        <p>Establish a secure connection to our premium sports streaming servers to watch in HD.</p>
+        <button class='ad-overlay-btn' id='adOverlayBtn'><i class='fa-solid fa-circle-play'/> Watch Live Stream</button>
       </div>
     </div>
 
-    <!-- App Loader -->
     <div class='app-loader-overlay' id='appLoader'>
       <div class='loader-content'>
-        <div class='brand logo-loading'>
-          <div class='brand-logo-container'><i class='fa-solid fa-play'></i></div>
-        </div>
-        <div class='loading-bar-container'><div class='loading-bar'></div></div>
+        <div class='brand logo-loading'><div class='brand-logo-container'><i class='fa-solid fa-play'/></div></div>
+        <div class='loading-bar-container'><div class='loading-bar'/></div>
         <span class='loading-status'>Loading channels database...</span>
       </div>
     </div>
 
-  </div><!-- /app-container -->
+  </div>
 
-  <!-- HLS.js Library -->
-  <script src='https://cdn.jsdelivr.net/npm/hls.js@1.5.15/dist/hls.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/hls.js@1.5.15/dist/hls.min.js'/>
 
-  <!-- ====== INLINE APP JAVASCRIPT ====== -->
-  <script>
-/* ==========================================
-   BLOGGER CONFIG — JSON URLs থেকে data fetch হবে
-   ==========================================
-   ⚠️ আপনার GitHub username এবং repo নাম নিচে সঠিক দিন
-   ========================================== */
-var CHANNELS_JSON_URL = 'https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/channels.json';
-var MATCHES_JSON_URL  = 'https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/matches.json';
-
-/* ==========================================
-   APP STATE & INITIALIZATION
-   ========================================== */
-var channels = [];
-var filteredChannels = [];
-var favorites = [];
-var currentCategory = 'All';
-var currentChannelIndex = -1;
-var pendingChannelIndex = -1;
-var displayedCount = 40;
-var hlsInstance = null;
-
-const directLinks = [
-  'https://omg10.com/4/10867251',
-  'https://omg10.com/4/10867541',
-  'https://omg10.com/4/10867542',
-  'https://www.effectivecpmnetwork.com/u9jcy3x37?key=663f13ecb5bfa7fd621dcc0a388d67e5'
-];
-var lastAdTime = Date.now();
-var channelChangeCount = 0;
-const adCooldownTime = 10 * 60 * 1000;
-
-const appLoader = document.getElementById('appLoader');
-const playerLoader = document.getElementById('playerLoader');
-const playerError = document.getElementById('playerError');
-const videoElement = document.getElementById('player');
-const searchInput = document.getElementById('searchInput');
-const clearSearchBtn = document.getElementById('clearSearchBtn');
-const categoryList = document.getElementById('categoryList');
-const channelGrid = document.getElementById('channelGrid');
-const channelCountBadge = document.getElementById('channelCount');
-const gridTitle = document.getElementById('gridTitle');
-const currentChannelName = document.getElementById('currentChannelName');
-const currentChannelCategory = document.getElementById('currentChannelCategory');
-const currentChannelLogo = document.getElementById('currentChannelLogo');
-const currentChannelFallback = document.getElementById('currentChannelFallback');
-const favoriteBtn = document.getElementById('favoriteBtn');
-
-const categoryIcons = {
-  'all': 'fa-solid fa-globe',
-  'favorites': 'fa-solid fa-star',
-  'fifa26': 'fa-solid fa-circle-play',
-  'sports': 'fa-solid fa-trophy',
-  'bangla': 'fa-solid fa-language',
-  'news': 'fa-solid fa-newspaper',
-  'kids': 'fa-solid fa-child-reaching',
-  'indian bangla': 'fa-solid fa-tv',
-  'entertainment': 'fa-solid fa-masks-theater',
-  'movies': 'fa-solid fa-film',
-  'english': 'fa-solid fa-globe',
-  'religious': 'fa-solid fa-hands-praying',
-  'hindi': 'fa-solid fa-tv',
-  'infotainment': 'fa-solid fa-circle-info',
-  'musics': 'fa-solid fa-music',
-  'drama': 'fa-solid fa-clapperboard',
-  'weather': 'fa-solid fa-cloud-sun',
-  'other': 'fa-solid fa-tv'
-};
-
-const fallbackColors = ['#6366f1','#06b6d4','#ec4899','#f59e0b','#10b981','#8b5cf6','#3b82f6','#ef4444','#14b8a6','#a855f7'];
-
-/* ==========================================
-   PLAYER INIT
-   ========================================== */
-function initPlayer() {
-  const playPauseBtn = document.getElementById('playPauseBtn');
-  const playPauseIcon = document.getElementById('playPauseIcon');
-  const muteBtn = document.getElementById('muteBtn');
-  const muteIcon = document.getElementById('muteIcon');
-  const volumeSlider = document.getElementById('volumeSlider');
-  const fullscreenBtn = document.getElementById('fullscreenBtn');
-  const fullscreenIcon = document.getElementById('fullscreenIcon');
-  const playerWrapper = document.querySelector('.player-wrapper');
-
-  playPauseBtn.addEventListener('click', function() {
-    if (videoElement.paused) { videoElement.play().catch(function(){}); }
-    else { videoElement.pause(); }
-  });
-  videoElement.addEventListener('play', function() { playPauseIcon.className = 'fa-solid fa-pause'; });
-  videoElement.addEventListener('pause', function() { playPauseIcon.className = 'fa-solid fa-play'; });
-  muteBtn.addEventListener('click', function() {
-    videoElement.muted = !videoElement.muted;
-    muteIcon.className = videoElement.muted ? 'fa-solid fa-volume-xmark' : 'fa-solid fa-volume-high';
-  });
-  volumeSlider.addEventListener('input', function() {
-    videoElement.volume = volumeSlider.value;
-    videoElement.muted = volumeSlider.value == 0;
-    muteIcon.className = videoElement.muted ? 'fa-solid fa-volume-xmark' : 'fa-solid fa-volume-high';
-  });
-  fullscreenBtn.addEventListener('click', function() {
-    if (!document.fullscreenElement) {
-      playerWrapper.requestFullscreen().catch(function(){});
-      fullscreenIcon.className = 'fa-solid fa-compress';
-    } else {
-      document.exitFullscreen();
-      fullscreenIcon.className = 'fa-solid fa-expand';
-    }
-  });
-  document.addEventListener('fullscreenchange', function() {
-    if (!document.fullscreenElement) { fullscreenIcon.className = 'fa-solid fa-expand'; }
-  });
-  playerWrapper.addEventListener('click', function() {
-    playerWrapper.classList.add('show-controls');
-    clearTimeout(playerWrapper._hideTimer);
-    playerWrapper._hideTimer = setTimeout(function() { playerWrapper.classList.remove('show-controls'); }, 3000);
-  });
-  videoElement.addEventListener('error', function() {
-    if (!hlsInstance && videoElement.error) { showPlayerError(); }
-  });
-  videoElement.addEventListener('playing', function() {
-    playerLoader.classList.add('hidden');
-    playerError.classList.add('hidden');
-  });
-  videoElement.addEventListener('waiting', function() { playerLoader.classList.remove('hidden'); });
-}
-
-/* ==========================================
-   LOAD DATA & START APP
-   ========================================== */
-document.addEventListener('DOMContentLoaded', function() {
-  initPlayer();
-  loadFavorites();
-  fetchChannels();
-
-  searchInput.addEventListener('input', handleSearchInput);
-  clearSearchBtn.addEventListener('click', clearSearch);
-  favoriteBtn.addEventListener('click', toggleFavoriteCurrent);
-
-  const altServerBtn = document.getElementById('altServerBtn');
-  if (altServerBtn) {
-    altServerBtn.addEventListener('click', function() {
-      var randomIndex = Math.floor(Math.random() * directLinks.length);
-      window.open(directLinks[randomIndex], '_blank');
-    });
-  }
-
-  document.addEventListener('click', function initPopunder() {
-    triggerDirectLink();
-    document.removeEventListener('click', initPopunder);
-  });
-
-  const contentArea = document.querySelector('.content-area');
-  if (contentArea) {
-    contentArea.addEventListener('scroll', function() {
-      if (contentArea.scrollTop + contentArea.clientHeight >= contentArea.scrollHeight - 150) {
-        if (displayedCount < filteredChannels.length) {
-          displayedCount += 40;
-          renderChannels();
-        }
-      }
-    });
-  }
-});
-
-function loadFavorites() {
-  try {
-    var saved = localStorage.getItem('alones_tv_favorites');
-    if (saved) { favorites = JSON.parse(saved); }
-  } catch(e) { favorites = []; }
-}
-
-function fetchChannels() {
-  fetch(CHANNELS_JSON_URL)
-    .then(function(res) {
-      if (!res.ok) throw new Error('Network error');
-      return res.json();
-    })
-    .then(function(data) {
-      channels = data;
-      filteredChannels = channels.slice();
-      appLoader.classList.add('hidden');
-      renderCategories();
-      renderChannels();
-      handleAutoPlay();
-    })
-    .catch(function(err) {
-      console.error('Failed to load channels:', err);
-      var ls = document.querySelector('.loading-status');
-      if (ls) ls.innerHTML = "<span style='color:#ef4444;'><i class='fa-solid fa-circle-exclamation'></i> Failed to load channels. Please refresh!</span>";
-    });
-}
-
-/* ==========================================
-   CATEGORIES & CHANNEL RENDERERS
-   ========================================== */
-function renderCategories() {
-  categoryList.innerHTML = '';
-  var categoryCounts = {};
-  channels.forEach(function(ch) {
-    var cat = ch.category || 'Other';
-    categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
-  });
-  var categoriesList = Object.keys(categoryCounts);
-  var customOrder = ['fifa26','sports','bangla','news','kids','entertainment','movies','english','religious','hindi','infotainment','musics','drama','weather','other'];
-  categoriesList.sort(function(a, b) {
-    var ia = customOrder.indexOf(a.toLowerCase().trim()); if (ia === -1) ia = 99;
-    var ib = customOrder.indexOf(b.toLowerCase().trim()); if (ib === -1) ib = 99;
-    return ia - ib;
-  });
-
-  function buildBtn(name, icon, count, isActive) {
-    var countBadge = count !== null ? '<span class="category-count">' + count + '</span>' : '';
-    var activeClass = isActive ? 'active' : '';
-    var cleanName = name.toLowerCase().trim() === 'fifa26' ? 'FIFA' : name;
-    return '<button class="category-pill ' + activeClass + '" data-category="' + name + '" onclick="selectCategory(\'' + name + '\', this)"><span><i class="' + icon + '"></i>' + cleanName + '</span>' + countBadge + '</button>';
-  }
-
-  categoryList.innerHTML += buildBtn('All', categoryIcons['all'], channels.length, currentCategory === 'All');
-  categoryList.innerHTML += buildBtn('Favorites', categoryIcons['favorites'], favorites.length, currentCategory === 'Favorites');
-  categoriesList.forEach(function(cat) {
-    var lc = cat.toLowerCase().trim();
-    var icon = categoryIcons[lc] || categoryIcons['other'];
-    categoryList.innerHTML += buildBtn(cat, icon, categoryCounts[cat], currentCategory === cat);
-  });
-}
-
-function renderChannels() {
-  channelGrid.innerHTML = '';
-  if (filteredChannels.length === 0) {
-    channelGrid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);"><i class="fa-regular fa-folder-open" style="font-size:44px;margin-bottom:12px;display:block;"></i>No channels found.</div>';
-    channelCountBadge.innerText = '0 channels';
-    return;
-  }
-  channelCountBadge.innerText = filteredChannels.length + ' channel' + (filteredChannels.length > 1 ? 's' : '');
-  var renderList = filteredChannels.slice(0, displayedCount);
-  renderList.forEach(function(ch, idx) {
-    var isPlaying = currentChannelIndex !== -1 && filteredChannels[currentChannelIndex] && filteredChannels[currentChannelIndex].id === ch.id;
-    var activeClass = isPlaying ? 'active' : '';
-    var liveBadge = isPlaying ? '<span class="live-badge">LIVE</span>' : '';
-    var logoHTML = '';
-    if (ch.logo && ch.logo !== '' && !ch.logo.endsWith('.svg')) {
-      logoHTML = '<img src="' + ch.logo + '" alt="' + ch.name + '" loading="lazy" onerror="handleLogoError(this,\'' + ch.name.replace(/'/g,"\\'") + '\')">';
-    } else {
-      logoHTML = '<div class="card-fallback" style="background:' + getFallbackColor(ch.name) + '">' + getInitials(ch.name) + '</div>';
-    }
-    channelGrid.innerHTML += '<div class="channel-card ' + activeClass + '" data-id="' + ch.id + '" onclick="clickChannel(' + idx + ')">' + liveBadge + '<div class="card-logo-container">' + logoHTML + '</div><div class="card-name">' + ch.name + '</div></div>';
-  });
-}
-
-function handleLogoError(img, name) {
-  var parent = img.parentElement;
-  if (!parent) return;
-  parent.innerHTML = '<div class="card-fallback" style="background:' + getFallbackColor(name) + '">' + getInitials(name) + '</div>';
-}
-
-function getInitials(name) {
-  if (!name) return 'TV';
-  var clean = name.replace(/[^A-Za-z0-9 ]/g, '').trim();
-  var words = clean.split(' ');
-  if (words.length >= 2) return (words[0][0] + words[1][0]).toUpperCase();
-  return name.slice(0, 2).toUpperCase();
-}
-
-function getFallbackColor(name) {
-  var hash = 0;
-  for (var i = 0; i < name.length; i++) { hash = name.charCodeAt(i) + ((hash << 5) - hash); }
-  return fallbackColors[Math.abs(hash) % fallbackColors.length];
-}
-
-/* ==========================================
-   AD SYSTEM
-   ========================================== */
-const adOverlay = document.getElementById('adOverlay');
-const adOverlayBtn = document.getElementById('adOverlayBtn');
-
-function triggerDirectLink() {
-  var randomIndex = Math.floor(Math.random() * directLinks.length);
-  var url = directLinks[randomIndex];
-  var win = window.open(url, '_blank');
-  if (!win || win.closed || typeof win.closed === 'undefined') {
-    showAdOverlay(url);
-    return false;
-  }
-  try { win.blur(); window.focus(); } catch(e) {}
-  return true;
-}
-
-function showAdOverlay(adUrl) {
-  adOverlay.classList.remove('hidden');
-  var newBtn = adOverlayBtn.cloneNode(true);
-  adOverlayBtn.parentNode.replaceChild(newBtn, adOverlayBtn);
-  newBtn.addEventListener('click', function() {
-    window.open(adUrl, '_blank');
-    adOverlay.classList.add('hidden');
-    if (pendingChannelIndex !== -1) {
-      playChannel(pendingChannelIndex);
-      pendingChannelIndex = -1;
-    }
-  });
-}
-
-/* ==========================================
-   CHANNEL PLAYBACK
-   ========================================== */
-function clickChannel(filteredIdx) {
-  var actualChannel = filteredChannels[filteredIdx];
-  var mainIdx = channels.findIndex(function(ch) { return ch.id === actualChannel.id; });
-  if (mainIdx === -1) return;
-  channelChangeCount++;
-  var now = Date.now();
-  if (channelChangeCount >= 8 || (now - lastAdTime >= adCooldownTime)) {
-    channelChangeCount = 0;
-    lastAdTime = now;
-    var adOpened = triggerDirectLink();
-    if (!adOpened) { pendingChannelIndex = mainIdx; return; }
-  }
-  playChannel(mainIdx);
-}
-
-function playChannel(mainIndex) {
-  if (mainIndex < 0 || mainIndex >= channels.length) return;
-  var ch = channels[mainIndex];
-  document.querySelectorAll('.channel-card').forEach(function(card) {
-    card.classList.remove('active');
-    var badge = card.querySelector('.live-badge');
-    if (badge) badge.remove();
-    if (card.dataset.id === ch.id) {
-      card.classList.add('active');
-      card.insertAdjacentHTML('afterbegin', '<span class="live-badge">LIVE</span>');
-    }
-  });
-  currentChannelIndex = filteredChannels.findIndex(function(fch) { return fch.id === ch.id; });
-  currentChannelName.innerText = ch.name;
-  currentChannelCategory.innerText = ch.category;
-  if (ch.logo && ch.logo !== '' && !ch.logo.endsWith('.svg')) {
-    currentChannelLogo.src = ch.logo;
-    currentChannelLogo.classList.remove('hidden');
-    currentChannelFallback.classList.add('hidden');
-  } else {
-    currentChannelLogo.classList.add('hidden');
-    currentChannelFallback.classList.remove('hidden');
-    currentChannelFallback.innerText = getInitials(ch.name);
-    currentChannelFallback.style.background = getFallbackColor(ch.name);
-  }
-  updateFavoriteButtonState(ch.id);
-  playerError.classList.add('hidden');
-  playerLoader.classList.remove('hidden');
-  loadStream(ch.url);
-  window.location.hash = ch.id;
-  if (window.innerWidth <= 768) { videoElement.scrollIntoView({ behavior: 'smooth' }); }
-}
-
-function loadStream(url) {
-  if (hlsInstance) { hlsInstance.destroy(); hlsInstance = null; }
-  videoElement.style.cssText = 'width:100%!important;height:100%!important;display:block!important;visibility:visible!important;opacity:1!important;position:absolute!important;top:0;left:0;background:#000;object-fit:contain;';
-  videoElement.removeAttribute('src');
-  videoElement.load();
-
-  if (typeof Hls !== 'undefined' && Hls.isSupported()) {
-    hlsInstance = new Hls({
-      maxMaxBufferLength: 30, maxBufferSize: 60*1000*1000, maxBufferLength: 30,
-      enableWorker: true, lowLatencyMode: true, startLevel: -1,
-      abrEwmaDefaultEstimate: 500000,
-      xhrSetup: function(xhr, url) { xhr.withCredentials = false; }
-    });
-    videoElement.crossOrigin = 'anonymous';
-    hlsInstance.attachMedia(videoElement);
-    hlsInstance.on(Hls.Events.MEDIA_ATTACHED, function() { hlsInstance.loadSource(url); });
-    hlsInstance.on(Hls.Events.MANIFEST_PARSED, function() {
-      videoElement.play().catch(function(e) { console.log('Play blocked:', e); });
-    });
-    hlsInstance.on(Hls.Events.FRAG_LOADED, function() {
-      if (videoElement.paused && videoElement.readyState >= 3) { videoElement.play().catch(function(){}); }
-    });
-    var mediaErrorCount = 0;
-    hlsInstance.on(Hls.Events.ERROR, function(event, data) {
-      if (!data.fatal) return;
-      if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-        setTimeout(function() { if (hlsInstance) hlsInstance.startLoad(); }, 1500);
-      } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
-        mediaErrorCount++;
-        if (mediaErrorCount < 4) { hlsInstance.recoverMediaError(); }
-        else { showPlayerError(); }
-      } else { showPlayerError(); }
-    });
-  } else if (videoElement.canPlayType('application/vnd.apple.mpegurl')) {
-    videoElement.crossOrigin = 'anonymous';
-    videoElement.src = url;
-    videoElement.addEventListener('loadedmetadata', function() {
-      videoElement.play().catch(function(e) { console.log('Play blocked:', e); });
-    }, { once: true });
-  } else {
-    showPlayerError();
-  }
-}
-
-function showPlayerError() {
-  playerLoader.classList.add('hidden');
-  playerError.classList.remove('hidden');
-}
-
-/* ==========================================
-   SEARCH & CATEGORY FILTERS
-   ========================================== */
-function selectCategory(categoryName, element) {
-  currentCategory = categoryName;
-  document.querySelectorAll('.category-pill').forEach(function(pill) { pill.classList.remove('active'); });
-  if (element) {
-    element.classList.add('active');
-  } else {
-    var pill = document.querySelector('.category-pill[data-category="' + categoryName + '"]');
-    if (pill) pill.classList.add('active');
-  }
-  document.querySelectorAll('.nav-item').forEach(function(item) {
-    item.classList.remove('active');
-    if (item.dataset.nav === categoryName) { item.classList.add('active'); }
-  });
-  var cleanTitle = categoryName.toLowerCase().trim() === 'fifa26' ? 'FIFA Streams' : categoryName + ' Channels';
-  gridTitle.innerText = cleanTitle;
-  filterAndSearch();
-  toggleFifaSection(categoryName === 'FIFA26' || categoryName.toLowerCase() === 'fifa26');
-  if (filteredChannels.length > 0) { clickChannel(0); }
-}
-
-function selectNav(navType, element) {
-  document.querySelectorAll('.nav-item').forEach(function(item) { item.classList.remove('active'); });
-  element.classList.add('active');
-  if (navType === 'Search') {
-    searchInput.focus();
-    searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  } else {
-    selectCategory(navType);
-  }
-}
-
-function handleSearchInput() {
-  clearSearchBtn.style.display = searchInput.value.trim().length > 0 ? 'block' : 'none';
-  filterAndSearch();
-}
-
-function clearSearch() {
-  searchInput.value = '';
-  clearSearchBtn.style.display = 'none';
-  filterAndSearch();
-  searchInput.focus();
-}
-
-function filterAndSearch() {
-  displayedCount = 40;
-  var contentArea = document.querySelector('.content-area');
-  if (contentArea) contentArea.scrollTop = 0;
-  var query = searchInput.value.toLowerCase().trim();
-  filteredChannels = channels.filter(function(ch) {
-    var matchesCat = false;
-    if (currentCategory === 'All') { matchesCat = true; }
-    else if (currentCategory === 'Favorites') { matchesCat = favorites.indexOf(ch.id) !== -1; }
-    else { matchesCat = ch.category === currentCategory; }
-    var matchesQuery = true;
-    if (query !== '') {
-      matchesQuery = ch.name.toLowerCase().indexOf(query) !== -1 ||
-                     (ch.category && ch.category.toLowerCase().indexOf(query) !== -1);
-    }
-    return matchesCat && matchesQuery;
-  });
-  renderChannels();
-}
-
-/* ==========================================
-   FAVORITES
-   ========================================== */
-function toggleFavoriteCurrent() {
-  if (currentChannelIndex === -1 || filteredChannels.length === 0) return;
-  var ch = filteredChannels[currentChannelIndex];
-  var favIndex = favorites.indexOf(ch.id);
-  if (favIndex === -1) { favorites.push(ch.id); }
-  else { favorites.splice(favIndex, 1); }
-  localStorage.setItem('alones_tv_favorites', JSON.stringify(favorites));
-  updateFavoriteButtonState(ch.id);
-  renderCategories();
-  if (currentCategory === 'Favorites') { filterAndSearch(); }
-}
-
-function updateFavoriteButtonState(channelId) {
-  var isFav = favorites.indexOf(channelId) !== -1;
-  var icon = favoriteBtn.querySelector('i');
-  if (isFav) {
-    favoriteBtn.classList.add('is-favorite');
-    icon.className = 'fa-solid fa-star';
-    favoriteBtn.title = 'Remove from Favorites';
-  } else {
-    favoriteBtn.classList.remove('is-favorite');
-    icon.className = 'fa-regular fa-star';
-    favoriteBtn.title = 'Add to Favorites';
-  }
-}
-
-/* ==========================================
-   AUTO PLAY & ROUTING
-   ========================================== */
-function handleAutoPlay() {
-  var targetChannelId = '';
-  var hash = window.location.hash;
-  if (hash && hash.startsWith('#ch_')) {
-    targetChannelId = hash.substring(1);
-    var index = channels.findIndex(function(ch) { return ch.id === targetChannelId; });
-    if (index !== -1) {
-      var tc = channels[index];
-      currentCategory = tc.category || 'All';
-      gridTitle.innerText = currentCategory.toLowerCase().trim() === 'fifa26' ? 'FIFA Streams' : currentCategory + ' Channels';
-      renderCategories();
-      filterAndSearch();
-    } else { targetChannelId = ''; }
-  }
-  if (!targetChannelId) {
-    var fifa1Chan = channels.find(function(ch) { return ch.name === 'FIFA1' || ch.id === 'ch_309'; });
-    if (fifa1Chan) {
-      targetChannelId = fifa1Chan.id;
-      currentCategory = 'FIFA26';
-      gridTitle.innerText = 'FIFA Streams';
-      renderCategories();
-      filterAndSearch();
-    } else {
-      var firstFifa = channels.find(function(ch) { return ch.category === 'FIFA26' || ch.category === 'fifa26'; });
-      if (firstFifa) {
-        targetChannelId = firstFifa.id;
-        currentCategory = 'FIFA26';
-        gridTitle.innerText = 'FIFA Streams';
-        renderCategories();
-        filterAndSearch();
-      } else {
-        currentCategory = 'All';
-        gridTitle.innerText = 'All Channels';
-        renderCategories();
-        filterAndSearch();
-      }
-    }
-  }
-  if (filteredChannels.length > 0) {
-    var playIdx = 0;
-    if (targetChannelId) {
-      var fi = filteredChannels.findIndex(function(ch) { return ch.id === targetChannelId; });
-      if (fi !== -1) playIdx = fi;
-    }
-    clickChannel(playIdx);
-  }
-}
-
-/* ==========================================
-   FIFA MATCH PLAYER MODULE
-   ========================================== */
-var matchesData = [];
-var currentMatchId = null;
-var currentServerIndex = 0;
-
-function fetchMatches() {
-  fetch(MATCHES_JSON_URL)
-    .then(function(res) { return res.ok ? res.json() : []; })
-    .then(function(data) { matchesData = data; renderMatchCards(); })
-    .catch(function() { matchesData = []; });
-}
-
-function renderMatchCards() {
-  var container = document.getElementById('matchCards');
-  if (!container || matchesData.length === 0) return;
-  container.innerHTML = matchesData.map(function(match) {
-    var statusLabel = match.status === 'live' ? 'LIVE' : match.status === 'finished' ? 'Finished' : 'Upcoming';
-    return '<div class="match-card" id="mcard-' + match.id + '" onclick="selectMatch(\'' + match.id + '\')">' +
-      '<div class="match-card-teams"><span class="match-flag">' + (match.team1_flag || '⚽') + '</span><span class="match-vs">vs</span><span class="match-flag">' + (match.team2_flag || '⚽') + '</span></div>' +
-      '<div class="match-card-title">' + match.team1 + ' vs ' + match.team2 + '</div>' +
-      '<div class="match-card-meta">' + (match.league || 'FIFA World Cup 2026') + '</div>' +
-      '<span class="match-status-pill ' + match.status + '">' + statusLabel + '</span></div>';
-  }).join('');
-  if (matchesData.length > 0 && !currentMatchId) { selectMatch(matchesData[0].id); }
-}
-
-function selectMatch(matchId) {
-  var match = matchesData.find(function(m) { return m.id === matchId; });
-  if (!match) return;
-  currentMatchId = matchId;
-  currentServerIndex = 0;
-  document.querySelectorAll('.match-card').forEach(function(c) { c.classList.remove('active'); });
-  var card = document.getElementById('mcard-' + matchId);
-  if (card) { card.classList.add('active'); card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); }
-  var teamsEl = document.getElementById('matchTeams');
-  var leagueEl = document.getElementById('matchLeague');
-  if (teamsEl) teamsEl.textContent = (match.team1_flag || '') + ' ' + match.team1 + ' vs ' + match.team2 + ' ' + (match.team2_flag || '');
-  if (leagueEl) leagueEl.textContent = match.league || 'FIFA World Cup 2026';
-  var dateEl = document.getElementById('matchDate');
-  var timeEl = document.getElementById('matchTime');
-  var statusEl = document.getElementById('matchStatus');
-  if (dateEl) dateEl.textContent = match.date || '-';
-  if (timeEl) timeEl.textContent = match.time || '-';
-  if (statusEl) {
-    statusEl.textContent = match.status === 'live' ? '🔴 LIVE' : match.status === 'finished' ? 'Finished' : '⏳ Upcoming';
-    statusEl.className = 'match-status-badge ' + (match.status || 'upcoming');
-  }
-  renderServerTabs(match.servers);
-  _loadServerInternal(0, match.servers);
-  var wrapper = document.getElementById('matchEmbedWrapper');
-  if (wrapper) wrapper.style.display = 'block';
-}
-
-function renderServerTabs(servers) {
-  var container = document.getElementById('serverTabs');
-  if (!container || !servers) return;
-  container.innerHTML = servers.map(function(srv, idx) {
-    return '<button class="server-tab-btn ' + (idx === 0 ? 'active' : '') + '" id="srv-btn-' + idx + '" onclick="loadMatchServer(' + idx + ')"><i class="fa-solid fa-server"></i> ' + srv.label + '</button>';
-  }).join('');
-}
-
-function _loadServerInternal(serverIndex, servers) {
-  if (!servers || !servers[serverIndex]) return;
-  currentServerIndex = serverIndex;
-  document.querySelectorAll('.server-tab-btn').forEach(function(btn, i) { btn.classList.toggle('active', i === serverIndex); });
-  var iframe = document.getElementById('matchIframe');
-  if (iframe) iframe.src = servers[serverIndex].url;
-}
-
-function loadMatchServer(serverIndex) {
-  var match = matchesData.find(function(m) { return m.id === currentMatchId; });
-  if (!match) return;
-  _loadServerInternal(serverIndex, match.servers);
-}
-
-function toggleFifaSection(isVisible) {
-  var section = document.getElementById('fifaMatchSection');
-  if (!section) return;
-  if (isVisible) {
-    section.style.display = 'block';
-    if (matchesData.length === 0) { fetchMatches(); }
-    else if (document.getElementById('matchCards').children.length === 0) { renderMatchCards(); }
-  } else { section.style.display = 'none'; }
-}
-
-setTimeout(function() {
-  fetch(MATCHES_JSON_URL).then(function(r) { return r.ok ? r.json() : []; }).then(function(data) { matchesData = data; }).catch(function(){});
-}, 800);
+  <script type='text/javascript'>
+  //<![CDATA[
+var CHANNELS_URL='https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/channels.json';
+var MATCHES_URL='https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/matches.json';
+var channels=[],filteredChannels=[],favorites=[],currentCategory='All',currentChannelIndex=-1,pendingChannelIndex=-1,displayedCount=40,hlsInstance=null;
+var directLinks=['https://omg10.com/4/10867251','https://omg10.com/4/10867541','https://omg10.com/4/10867542','https://www.effectivecpmnetwork.com/u9jcy3x37?key=663f13ecb5bfa7fd621dcc0a388d67e5'];
+var lastAdTime=Date.now(),channelChangeCount=0,adCooldownTime=10*60*1000;
+var appLoader=document.getElementById('appLoader'),playerLoader=document.getElementById('playerLoader'),playerError=document.getElementById('playerError'),videoElement=document.getElementById('player'),searchInput=document.getElementById('searchInput'),clearSearchBtn=document.getElementById('clearSearchBtn'),categoryList=document.getElementById('categoryList'),channelGrid=document.getElementById('channelGrid'),channelCountBadge=document.getElementById('channelCount'),gridTitle=document.getElementById('gridTitle'),currentChannelName=document.getElementById('currentChannelName'),currentChannelCategory=document.getElementById('currentChannelCategory'),currentChannelLogo=document.getElementById('currentChannelLogo'),currentChannelFallback=document.getElementById('currentChannelFallback'),favoriteBtn=document.getElementById('favoriteBtn');
+var categoryIcons={'all':'fa-solid fa-globe','favorites':'fa-solid fa-star','fifa26':'fa-solid fa-circle-play','sports':'fa-solid fa-trophy','bangla':'fa-solid fa-language','news':'fa-solid fa-newspaper','kids':'fa-solid fa-child-reaching','indian bangla':'fa-solid fa-tv','entertainment':'fa-solid fa-masks-theater','movies':'fa-solid fa-film','english':'fa-solid fa-globe','religious':'fa-solid fa-hands-praying','hindi':'fa-solid fa-tv','infotainment':'fa-solid fa-circle-info','musics':'fa-solid fa-music','drama':'fa-solid fa-clapperboard','weather':'fa-solid fa-cloud-sun','other':'fa-solid fa-tv'};
+var fallbackColors=['#6366f1','#06b6d4','#ec4899','#f59e0b','#10b981','#8b5cf6','#3b82f6','#ef4444','#14b8a6','#a855f7'];
+function initPlayer(){var pb=document.getElementById('playPauseBtn'),pi=document.getElementById('playPauseIcon'),mb=document.getElementById('muteBtn'),mi=document.getElementById('muteIcon'),vs=document.getElementById('volumeSlider'),fb=document.getElementById('fullscreenBtn'),fi=document.getElementById('fullscreenIcon'),pw=document.querySelector('.player-wrapper');pb.addEventListener('click',function(){if(videoElement.paused)videoElement.play().catch(function(){});else videoElement.pause();});videoElement.addEventListener('play',function(){pi.className='fa-solid fa-pause';});videoElement.addEventListener('pause',function(){pi.className='fa-solid fa-play';});mb.addEventListener('click',function(){videoElement.muted=!videoElement.muted;mi.className=videoElement.muted?'fa-solid fa-volume-xmark':'fa-solid fa-volume-high';});vs.addEventListener('input',function(){videoElement.volume=vs.value;videoElement.muted=vs.value==0;mi.className=videoElement.muted?'fa-solid fa-volume-xmark':'fa-solid fa-volume-high';});fb.addEventListener('click',function(){if(!document.fullscreenElement){pw.requestFullscreen().catch(function(){});fi.className='fa-solid fa-compress';}else{document.exitFullscreen();fi.className='fa-solid fa-expand';}});document.addEventListener('fullscreenchange',function(){if(!document.fullscreenElement)fi.className='fa-solid fa-expand';});pw.addEventListener('click',function(){pw.classList.add('show-controls');clearTimeout(pw._t);pw._t=setTimeout(function(){pw.classList.remove('show-controls');},3000);});videoElement.addEventListener('error',function(){if(!hlsInstance&&videoElement.error)showPlayerError();});videoElement.addEventListener('playing',function(){playerLoader.classList.add('hidden');playerError.classList.add('hidden');});videoElement.addEventListener('waiting',function(){playerLoader.classList.remove('hidden');});}
+document.addEventListener('DOMContentLoaded',function(){initPlayer();loadFavorites();fetchChannels();searchInput.addEventListener('input',handleSearchInput);clearSearchBtn.addEventListener('click',clearSearch);favoriteBtn.addEventListener('click',toggleFavoriteCurrent);var ab=document.getElementById('altServerBtn');if(ab)ab.addEventListener('click',function(){window.open(directLinks[Math.floor(Math.random()*directLinks.length)],'_blank');});document.addEventListener('click',function ip(){triggerDirectLink();document.removeEventListener('click',ip);});var ca=document.querySelector('.content-area');if(ca)ca.addEventListener('scroll',function(){if(ca.scrollTop+ca.clientHeight>=ca.scrollHeight-150&&displayedCount<filteredChannels.length){displayedCount+=40;renderChannels();}});});
+function loadFavorites(){try{var s=localStorage.getItem('alones_tv_favorites');if(s)favorites=JSON.parse(s);}catch(e){favorites=[];}}
+function fetchChannels(){fetch(CHANNELS_URL).then(function(r){if(!r.ok)throw new Error('err');return r.json();}).then(function(d){channels=d;filteredChannels=channels.slice();appLoader.classList.add('hidden');renderCategories();renderChannels();handleAutoPlay();}).catch(function(e){var ls=document.querySelector('.loading-status');if(ls)ls.innerHTML='<span style="color:#ef4444;"><i class="fa-solid fa-circle-exclamation"></i> Failed to load. Please refresh!</span>';});}
+function renderCategories(){categoryList.innerHTML='';var cc={};channels.forEach(function(ch){var c=ch.category||'Other';cc[c]=(cc[c]||0)+1;});var cl=Object.keys(cc),co=['fifa26','sports','bangla','news','kids','entertainment','movies','english','religious','hindi','infotainment','musics','drama','weather','other'];cl.sort(function(a,b){var ia=co.indexOf(a.toLowerCase().trim()),ib=co.indexOf(b.toLowerCase().trim());if(ia===-1)ia=99;if(ib===-1)ib=99;return ia-ib;});function bb(n,ic,cnt,ia){var cb=cnt!==null?'<span class="category-count">'+cnt+'</span>':'',ac=ia?'active':'',cn=n.toLowerCase().trim()==='fifa26'?'FIFA':n;return '<button class="category-pill '+ac+'" data-category="'+n+'" onclick="selectCategory(\''+n+'\',this)"><span><i class="'+ic+'"></i>'+cn+'</span>'+cb+'</button>';}
+categoryList.innerHTML+=bb('All',categoryIcons['all'],channels.length,currentCategory==='All');categoryList.innerHTML+=bb('Favorites',categoryIcons['favorites'],favorites.length,currentCategory==='Favorites');cl.forEach(function(c){var ic=categoryIcons[c.toLowerCase().trim()]||categoryIcons['other'];categoryList.innerHTML+=bb(c,ic,cc[c],currentCategory===c);});}
+function renderChannels(){channelGrid.innerHTML='';if(filteredChannels.length===0){channelGrid.innerHTML='<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--text-muted);"><i class="fa-regular fa-folder-open" style="font-size:44px;margin-bottom:12px;display:block;"></i>No channels found.</div>';channelCountBadge.innerText='0 channels';return;}channelCountBadge.innerText=filteredChannels.length+' channel'+(filteredChannels.length>1?'s':'');var rl=filteredChannels.slice(0,displayedCount);rl.forEach(function(ch,idx){var ip=currentChannelIndex!==-1&&filteredChannels[currentChannelIndex]&&filteredChannels[currentChannelIndex].id===ch.id,ac=ip?'active':'',lb=ip?'<span class="live-badge">LIVE</span>':'',lh='';if(ch.logo&&ch.logo!==''&&!ch.logo.endsWith('.svg'))lh='<img src="'+ch.logo+'" alt="'+ch.name+'" loading="lazy" onerror="handleLogoError(this,\''+ch.name.replace(/'/g,"\\'")+'\')">';else lh='<div class="card-fallback" style="background:'+getFallbackColor(ch.name)+'">'+getInitials(ch.name)+'</div>';channelGrid.innerHTML+='<div class="channel-card '+ac+'" data-id="'+ch.id+'" onclick="clickChannel('+idx+')">'+lb+'<div class="card-logo-container">'+lh+'</div><div class="card-name">'+ch.name+'</div></div>';});}
+function handleLogoError(img,name){var p=img.parentElement;if(!p)return;p.innerHTML='<div class="card-fallback" style="background:'+getFallbackColor(name)+'">'+getInitials(name)+'</div>';}
+function getInitials(n){if(!n)return'TV';var c=n.replace(/[^A-Za-z0-9 ]/g,'').trim(),w=c.split(' ');if(w.length>=2)return(w[0][0]+w[1][0]).toUpperCase();return n.slice(0,2).toUpperCase();}
+function getFallbackColor(n){var h=0;for(var i=0;i<n.length;i++)h=n.charCodeAt(i)+((h<<5)-h);return fallbackColors[Math.abs(h)%fallbackColors.length];}
+var adOverlay=document.getElementById('adOverlay'),adOverlayBtn=document.getElementById('adOverlayBtn');
+function triggerDirectLink(){var url=directLinks[Math.floor(Math.random()*directLinks.length)],win=window.open(url,'_blank');if(!win||win.closed||typeof win.closed==='undefined'){showAdOverlay(url);return false;}try{win.blur();window.focus();}catch(e){}return true;}
+function showAdOverlay(u){adOverlay.classList.remove('hidden');var nb=adOverlayBtn.cloneNode(true);adOverlayBtn.parentNode.replaceChild(nb,adOverlayBtn);nb.addEventListener('click',function(){window.open(u,'_blank');adOverlay.classList.add('hidden');if(pendingChannelIndex!==-1){playChannel(pendingChannelIndex);pendingChannelIndex=-1;}});}
+function clickChannel(fi){var ch=filteredChannels[fi],mi=channels.findIndex(function(c){return c.id===ch.id;});if(mi===-1)return;channelChangeCount++;var now=Date.now();if(channelChangeCount>=8||(now-lastAdTime>=adCooldownTime)){channelChangeCount=0;lastAdTime=now;var ao=triggerDirectLink();if(!ao){pendingChannelIndex=mi;return;}}playChannel(mi);}
+function playChannel(mi){if(mi<0||mi>=channels.length)return;var ch=channels[mi];document.querySelectorAll('.channel-card').forEach(function(card){card.classList.remove('active');var b=card.querySelector('.live-badge');if(b)b.remove();if(card.dataset.id===ch.id){card.classList.add('active');card.insertAdjacentHTML('afterbegin','<span class="live-badge">LIVE</span>');}});currentChannelIndex=filteredChannels.findIndex(function(c){return c.id===ch.id;});currentChannelName.innerText=ch.name;currentChannelCategory.innerText=ch.category;if(ch.logo&&ch.logo!==''&&!ch.logo.endsWith('.svg')){currentChannelLogo.src=ch.logo;currentChannelLogo.classList.remove('hidden');currentChannelFallback.classList.add('hidden');}else{currentChannelLogo.classList.add('hidden');currentChannelFallback.classList.remove('hidden');currentChannelFallback.innerText=getInitials(ch.name);currentChannelFallback.style.background=getFallbackColor(ch.name);}updateFavoriteButtonState(ch.id);playerError.classList.add('hidden');playerLoader.classList.remove('hidden');loadStream(ch.url);window.location.hash=ch.id;if(window.innerWidth<=768)videoElement.scrollIntoView({behavior:'smooth'});}
+function loadStream(url){if(hlsInstance){hlsInstance.destroy();hlsInstance=null;}videoElement.style.cssText='width:100%!important;height:100%!important;display:block!important;visibility:visible!important;opacity:1!important;position:absolute!important;top:0;left:0;background:#000;object-fit:contain;';videoElement.removeAttribute('src');videoElement.load();if(typeof Hls!=='undefined'&&Hls.isSupported()){hlsInstance=new Hls({maxMaxBufferLength:30,maxBufferSize:60000000,maxBufferLength:30,enableWorker:true,lowLatencyMode:true,startLevel:-1,xhrSetup:function(xhr){xhr.withCredentials=false;}});videoElement.crossOrigin='anonymous';hlsInstance.attachMedia(videoElement);hlsInstance.on(Hls.Events.MEDIA_ATTACHED,function(){hlsInstance.loadSource(url);});hlsInstance.on(Hls.Events.MANIFEST_PARSED,function(){videoElement.play().catch(function(){});});hlsInstance.on(Hls.Events.FRAG_LOADED,function(){if(videoElement.paused&&videoElement.readyState>=3)videoElement.play().catch(function(){});});var ec=0;hlsInstance.on(Hls.Events.ERROR,function(e,d){if(!d.fatal)return;if(d.type===Hls.ErrorTypes.NETWORK_ERROR)setTimeout(function(){if(hlsInstance)hlsInstance.startLoad();},1500);else if(d.type===Hls.ErrorTypes.MEDIA_ERROR){ec++;if(ec<4)hlsInstance.recoverMediaError();else showPlayerError();}else showPlayerError();});}else if(videoElement.canPlayType('application/vnd.apple.mpegurl')){videoElement.crossOrigin='anonymous';videoElement.src=url;videoElement.addEventListener('loadedmetadata',function(){videoElement.play().catch(function(){});},{once:true});}else showPlayerError();}
+function showPlayerError(){playerLoader.classList.add('hidden');playerError.classList.remove('hidden');}
+function selectCategory(cn,el){currentCategory=cn;document.querySelectorAll('.category-pill').forEach(function(p){p.classList.remove('active');});if(el)el.classList.add('active');else{var p=document.querySelector('.category-pill[data-category="'+cn+'"]');if(p)p.classList.add('active');}document.querySelectorAll('.nav-item').forEach(function(it){it.classList.remove('active');if(it.dataset.nav===cn)it.classList.add('active');});gridTitle.innerText=cn.toLowerCase().trim()==='fifa26'?'FIFA Streams':cn+' Channels';filterAndSearch();toggleFifaSection(cn==='FIFA26'||cn.toLowerCase()==='fifa26');if(filteredChannels.length>0)clickChannel(0);}
+function selectNav(nt,el){document.querySelectorAll('.nav-item').forEach(function(it){it.classList.remove('active');});el.classList.add('active');if(nt==='Search'){searchInput.focus();searchInput.scrollIntoView({behavior:'smooth',block:'center'});}else selectCategory(nt);}
+function handleSearchInput(){clearSearchBtn.style.display=searchInput.value.trim().length>0?'block':'none';filterAndSearch();}
+function clearSearch(){searchInput.value='';clearSearchBtn.style.display='none';filterAndSearch();searchInput.focus();}
+function filterAndSearch(){displayedCount=40;var ca=document.querySelector('.content-area');if(ca)ca.scrollTop=0;var q=searchInput.value.toLowerCase().trim();filteredChannels=channels.filter(function(ch){var mc=false;if(currentCategory==='All')mc=true;else if(currentCategory==='Favorites')mc=favorites.indexOf(ch.id)!==-1;else mc=ch.category===currentCategory;var mq=true;if(q!=='')mq=ch.name.toLowerCase().indexOf(q)!==-1||(ch.category&&ch.category.toLowerCase().indexOf(q)!==-1);return mc&&mq;});renderChannels();}
+function toggleFavoriteCurrent(){if(currentChannelIndex===-1||filteredChannels.length===0)return;var ch=filteredChannels[currentChannelIndex],fi=favorites.indexOf(ch.id);if(fi===-1)favorites.push(ch.id);else favorites.splice(fi,1);localStorage.setItem('alones_tv_favorites',JSON.stringify(favorites));updateFavoriteButtonState(ch.id);renderCategories();if(currentCategory==='Favorites')filterAndSearch();}
+function updateFavoriteButtonState(id){var f=favorites.indexOf(id)!==-1,ic=favoriteBtn.querySelector('i');if(f){favoriteBtn.classList.add('is-favorite');ic.className='fa-solid fa-star';favoriteBtn.title='Remove from Favorites';}else{favoriteBtn.classList.remove('is-favorite');ic.className='fa-regular fa-star';favoriteBtn.title='Add to Favorites';}}
+function handleAutoPlay(){var tid='',hash=window.location.hash;if(hash&&hash.startsWith('#ch_')){tid=hash.substring(1);var idx=channels.findIndex(function(c){return c.id===tid;});if(idx!==-1){var tc=channels[idx];currentCategory=tc.category||'All';gridTitle.innerText=currentCategory.toLowerCase().trim()==='fifa26'?'FIFA Streams':currentCategory+' Channels';renderCategories();filterAndSearch();}else tid='';}if(!tid){var f1=channels.find(function(c){return c.name==='FIFA1'||c.id==='ch_309';});if(f1){tid=f1.id;currentCategory='FIFA26';gridTitle.innerText='FIFA Streams';renderCategories();filterAndSearch();}else{var ff=channels.find(function(c){return c.category==='FIFA26'||c.category==='fifa26';});if(ff){tid=ff.id;currentCategory='FIFA26';gridTitle.innerText='FIFA Streams';renderCategories();filterAndSearch();}else{currentCategory='All';gridTitle.innerText='All Channels';renderCategories();filterAndSearch();}}}if(filteredChannels.length>0){var pi=0;if(tid){var fi=filteredChannels.findIndex(function(c){return c.id===tid;});if(fi!==-1)pi=fi;}clickChannel(pi);}}
+var matchesData=[],currentMatchId=null,currentServerIndex=0;
+function fetchMatches(){fetch(MATCHES_URL).then(function(r){return r.ok?r.json():[];}).then(function(d){matchesData=d;renderMatchCards();}).catch(function(){matchesData=[];});}
+function renderMatchCards(){var c=document.getElementById('matchCards');if(!c||matchesData.length===0)return;c.innerHTML=matchesData.map(function(m){var sl=m.status==='live'?'LIVE':m.status==='finished'?'Finished':'Upcoming';return'<div class="match-card" id="mcard-'+m.id+'" onclick="selectMatch(\''+m.id+'\')"><div class="match-card-teams"><span class="match-flag">'+(m.team1_flag||'&#x26BD;')+'</span><span class="match-vs">vs</span><span class="match-flag">'+(m.team2_flag||'&#x26BD;')+'</span></div><div class="match-card-title">'+m.team1+' vs '+m.team2+'</div><div class="match-card-meta">'+(m.league||'FIFA World Cup 2026')+'</div><span class="match-status-pill '+m.status+'">'+sl+'</span></div>';}).join('');if(matchesData.length>0&&!currentMatchId)selectMatch(matchesData[0].id);}
+function selectMatch(id){var m=matchesData.find(function(x){return x.id===id;});if(!m)return;currentMatchId=id;currentServerIndex=0;document.querySelectorAll('.match-card').forEach(function(c){c.classList.remove('active');});var card=document.getElementById('mcard-'+id);if(card){card.classList.add('active');card.scrollIntoView({behavior:'smooth',block:'nearest',inline:'center'});}var te=document.getElementById('matchTeams'),le=document.getElementById('matchLeague');if(te)te.textContent=(m.team1_flag||'')+' '+m.team1+' vs '+m.team2+' '+(m.team2_flag||'');if(le)le.textContent=m.league||'FIFA World Cup 2026';var de=document.getElementById('matchDate'),tie=document.getElementById('matchTime'),se=document.getElementById('matchStatus');if(de)de.textContent=m.date||'-';if(tie)tie.textContent=m.time||'-';if(se){se.textContent=m.status==='live'?'LIVE':m.status==='finished'?'Finished':'Upcoming';se.className='match-status-badge '+(m.status||'upcoming');}renderServerTabs(m.servers);_loadServerInternal(0,m.servers);var w=document.getElementById('matchEmbedWrapper');if(w)w.style.display='block';}
+function renderServerTabs(ss){var c=document.getElementById('serverTabs');if(!c||!ss)return;c.innerHTML=ss.map(function(s,i){return'<button class="server-tab-btn '+(i===0?'active':'')+'" onclick="loadMatchServer('+i+')"><i class="fa-solid fa-server"></i> '+s.label+'</button>';}).join('');}
+function _loadServerInternal(si,ss){if(!ss||!ss[si])return;currentServerIndex=si;document.querySelectorAll('.server-tab-btn').forEach(function(b,i){b.classList.toggle('active',i===si);});var ifr=document.getElementById('matchIframe');if(ifr)ifr.src=ss[si].url;}
+function loadMatchServer(si){var m=matchesData.find(function(x){return x.id===currentMatchId;});if(!m)return;_loadServerInternal(si,m.servers);}
+function toggleFifaSection(v){var s=document.getElementById('fifaMatchSection');if(!s)return;if(v){s.style.display='block';if(matchesData.length===0)fetchMatches();else if(document.getElementById('matchCards').children.length===0)renderMatchCards();}else s.style.display='none';}
+setTimeout(function(){fetch(MATCHES_URL).then(function(r){return r.ok?r.json():[];}).then(function(d){matchesData=d;}).catch(function(){});},800);
+  //]]>
   </script>
 
-  <!-- ✅ Adsterra Popunder -->
-  <script src='https://pl29736919.effectivecpmnetwork.com/42/46/3e/42463e1d48ccaa804a3a46d5b48d54f6.js'></script>
-
-  <!-- ✅ Adsterra Social Bar -->
-  <script src='https://pl29736922.effectivecpmnetwork.com/2c/7c/c6/2c7cc68fb62138aaecc833c758e4c3a7.js'></script>
+  <script src='https://pl29736919.effectivecpmnetwork.com/42/46/3e/42463e1d48ccaa804a3a46d5b48d54f6.js'/>
+  <script src='https://pl29736922.effectivecpmnetwork.com/2c/7c/c6/2c7cc68fb62138aaecc833c758e4c3a7.js'/>
 
 </body>
 </html>
