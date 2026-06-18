@@ -7,13 +7,13 @@
   <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
   <b:include data='blog' name='all-head-content'/>
 
-  <b:if expr='data:blog.pageName'>
+  <b:if cond='data:blog.pageName'>
     <title><data:blog.pageName/> | ALONE TV</title>
   <b:else/>
     <title>ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Channels Free</title>
   </b:if>
 
-  <b:if expr='data:blog.metaDescription'>
+  <b:if cond='data:blog.metaDescription'>
     <meta expr:content='data:blog.metaDescription' name='description'/>
   <b:else/>
     <meta content='Watch FIFA World Cup 2026 Live Stream for free. High-definition live sports, football matches, cricket, and top entertainment channels. Stream live FIFA 2026 on ALONE TV.' name='description'/>
@@ -26,13 +26,13 @@
   <meta content='en_US' property='og:locale'/>
   <meta content='website' property='og:type'/>
 
-  <b:if expr='data:blog.pageName'>
+  <b:if cond='data:blog.pageName'>
     <meta expr:content='data:blog.pageName' property='og:title'/>
   <b:else/>
     <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' property='og:title'/>
   </b:if>
 
-  <b:if expr='data:blog.metaDescription'>
+  <b:if cond='data:blog.metaDescription'>
     <meta expr:content='data:blog.metaDescription' property='og:description'/>
   <b:else/>
     <meta content='Watch FIFA World Cup 2026 Live Stream, live football matches, sports channels, and entertainment TV in HD for free.' property='og:description'/>
@@ -46,13 +46,13 @@
 
   <meta content='summary_large_image' name='twitter:card'/>
 
-  <b:if expr='data:blog.pageName'>
+  <b:if cond='data:blog.pageName'>
     <meta expr:content='data:blog.pageName' name='twitter:title'/>
   <b:else/>
     <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' name='twitter:title'/>
   </b:if>
 
-  <b:if expr='data:blog.metaDescription'>
+  <b:if cond='data:blog.metaDescription'>
     <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
   <b:else/>
     <meta content='Watch FIFA World Cup 2026 Live Stream, sports channels, and live TV in HD for free on ALONE TV.' name='twitter:description'/>
