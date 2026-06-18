@@ -7,25 +7,56 @@
   <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
   <b:include data='blog' name='all-head-content'/>
 
-  <title>ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Channels Free</title>
-  <meta content='Watch FIFA World Cup 2026 Live Stream for free. High-definition live sports, football matches, cricket, and top entertainment channels. Stream live FIFA 2026 on ALONE TV.' name='description'/>
+  <b:if expr='data:blog.pageName'>
+    <title><data:blog.pageName/> | ALONE TV</title>
+  <b:else/>
+    <title>ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Channels Free</title>
+  </b:if>
+
+  <b:if expr='data:blog.metaDescription'>
+    <meta expr:content='data:blog.metaDescription' name='description'/>
+  <b:else/>
+    <meta content='Watch FIFA World Cup 2026 Live Stream for free. High-definition live sports, football matches, cricket, and top entertainment channels. Stream live FIFA 2026 on ALONE TV.' name='description'/>
+  </b:if>
+
   <meta content='fifa world cup live, live world cup, fifa world cup 2026 live, iran vs new zealand live, spain vs cape verde live, belgium vs egypt live, watch live football free, sports live stream, live tv website, bangla tv live, t sports live' name='keywords'/>
   <meta content='index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' name='robots'/>
-  <link expr:href='data:blog.homepageUrl' rel='canonical'/>
+  <link expr:href='data:blog.url' rel='canonical'/>
 
   <meta content='en_US' property='og:locale'/>
   <meta content='website' property='og:type'/>
-  <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' property='og:title'/>
-  <meta content='Watch FIFA World Cup 2026 Live Stream, live football matches, sports channels, and entertainment TV in HD for free.' property='og:description'/>
-  <meta expr:content='data:blog.homepageUrl' property='og:url'/>
+
+  <b:if expr='data:blog.pageName'>
+    <meta expr:content='data:blog.pageName' property='og:title'/>
+  <b:else/>
+    <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' property='og:title'/>
+  </b:if>
+
+  <b:if expr='data:blog.metaDescription'>
+    <meta expr:content='data:blog.metaDescription' property='og:description'/>
+  <b:else/>
+    <meta content='Watch FIFA World Cup 2026 Live Stream, live football matches, sports channels, and entertainment TV in HD for free.' property='og:description'/>
+  </b:if>
+
+  <meta expr:content='data:blog.url' property='og:url'/>
   <meta content='ALONE TV' property='og:site_name'/>
   <meta content='https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/assets/seo_banner.png' property='og:image'/>
   <meta content='1200' property='og:image:width'/>
   <meta content='630' property='og:image:height'/>
 
   <meta content='summary_large_image' name='twitter:card'/>
-  <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' name='twitter:title'/>
-  <meta content='Watch FIFA World Cup 2026 Live Stream, sports channels, and live TV in HD for free on ALONE TV.' name='twitter:description'/>
+
+  <b:if expr='data:blog.pageName'>
+    <meta expr:content='data:blog.pageName' name='twitter:title'/>
+  <b:else/>
+    <meta content='ALONE TV - Watch FIFA World Cup 2026 Live Stream &amp; Live TV Free' name='twitter:title'/>
+  </b:if>
+
+  <b:if expr='data:blog.metaDescription'>
+    <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+  <b:else/>
+    <meta content='Watch FIFA World Cup 2026 Live Stream, sports channels, and live TV in HD for free on ALONE TV.' name='twitter:description'/>
+  </b:if>
   <meta content='https://raw.githubusercontent.com/tawhid2005/Alone-TV/main/assets/seo_banner.png' name='twitter:image'/>
 
   <link href='https://fonts.googleapis.com' rel='dns-prefetch'/>
